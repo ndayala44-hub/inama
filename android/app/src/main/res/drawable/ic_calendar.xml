@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inama icon "calendar" (24dp stroke). Tinted at runtime via Icon(tint = …). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M5,5 h14 a2,2 0 0,1 2,2 v12 a2,2 0 0,1 -2,2 h-14 a2,2 0 0,1 -2,-2 v-12 a2,2 0 0,1 2,-2 Z" android:fillColor="#00000000" android:strokeColor="#FF000000" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    <path android:pathData="M3 10h18M8 3v4M16 3v4" android:fillColor="#00000000" android:strokeColor="#FF000000" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+</vector>

@@ -1,0 +1,98 @@
+{
+ "success": true,
+ "data": {
+  "id": "dg_acd25a3085906ae9",
+  "createdAt": "2026-09-30T11:11:06.277Z",
+  "language": "en",
+  "crop": {
+   "id": "cassava",
+   "name": "Cassava"
+  },
+  "fieldId": "field_1",
+  "confidence": {
+   "level": "high",
+   "score": 0.83,
+   "reasonCode": "photo_and_signs",
+   "count": 3,
+   "reason": "your photo and 3 of your signs agree"
+  },
+  "photoProblem": null,
+  "engine": {
+   "id": "inama-kb",
+   "version": "1.0.0",
+   "mode": "remote",
+   "model": null
+  },
+  "outcome": "condition",
+  "condition": {
+   "id": "cassava_bacterial_blight",
+   "name": "Cassava bacterial blight",
+   "type": "disease"
+  },
+  "headline": "Your cassava may have bacterial blight",
+  "urgency": "this_week",
+  "whatsHappening": "Bacteria are making brown, angular spots on the leaves, and some shoots are drying from the tip.",
+  "whyItMatters": "It spreads through cuttings, tools and rain splash. Left alone it moves across the field and cuts your harvest.",
+  "steps": [
+   "Pull out plants with drying shoots and burn them away from the field.",
+   "Don’t take cuttings from this field for planting.",
+   "Clean your hoe and panga after working here.",
+   "Next season, plant clean cuttings of a resistant variety — your farmer promoter can help you find them."
+  ],
+  "evidence": {
+   "matched": [
+    {
+     "kind": "symptom",
+     "id": "brown_spots",
+     "label": "Brown spots on leaves"
+    },
+    {
+     "kind": "symptom",
+     "id": "drying_tips",
+     "label": "Tips or shoots drying out"
+    },
+    {
+     "kind": "symptom",
+     "id": "wilting",
+     "label": "Wilting or drooping"
+    },
+    {
+     "kind": "photo",
+     "id": "brown",
+     "label": "Brown areas in the photo"
+    }
+   ],
+   "lookFor": "Sticky gum on stems — look for it",
+   "signs": [
+    "Angular brown spots between leaf veins",
+    "Yellow edges around the spots",
+    "Shoot tips drying out"
+   ]
+  },
+  "candidates": [],
+  "lessLikely": [
+   {
+    "id": "cassava_brown_streak",
+    "name": "Cassava brown streak"
+   }
+  ],
+  "sources": [
+   "IITA cassava disease guidance",
+   "Rwanda Agriculture Board (RAB) crop protection guidance"
+  ],
+  "escalation": {
+   "recommended": false,
+   "reasonCode": null,
+   "reason": null
+  },
+  "image": {
+   "bytes": 6801,
+   "mimeType": "image/jpeg"
+  },
+  "symptoms": [
+   "brown_spots",
+   "drying_tips",
+   "wilting"
+  ]
+ }
+}

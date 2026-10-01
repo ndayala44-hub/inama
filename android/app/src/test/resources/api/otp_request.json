@@ -1,0 +1,9 @@
+{
+ "success": true,
+ "data": {
+  "requestId": "otp_cfbfad90ef2b599a",
+  "phone": "+25078•• ••• 456",
+  "expiresInSeconds": 300,
+  "devCode": "149070"
+ }
+}

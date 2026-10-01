@@ -1,0 +1,157 @@
+{
+ "schemaVersion": 1,
+ "vectors": [
+  {
+   "name": "cassava blight, clear photo",
+   "cropId": "cassava",
+   "symptoms": [
+    "brown_spots",
+    "drying_tips",
+    "wilting"
+   ],
+   "features": {
+    "brownRatio": 0.11,
+    "yellowRatio": 0.05,
+    "whiteRatio": 0.01,
+    "greenRatio": 0.55,
+    "brightness": 0.52,
+    "sharpness": 0.6
+   },
+   "expect": {
+    "conditionId": "cassava_bacterial_blight",
+    "level": "high"
+   }
+  },
+  {
+   "name": "maize armyworm by symptoms only",
+   "cropId": "maize",
+   "symptoms": [
+    "holes",
+    "frass"
+   ],
+   "features": null,
+   "expect": {
+    "conditionId": "maize_fall_armyworm",
+    "level": "high"
+   }
+  },
+  {
+   "name": "beans spots with blurry photo",
+   "cropId": "beans",
+   "symptoms": [
+    "brown_spots"
+   ],
+   "features": {
+    "brownRatio": 0.06,
+    "yellowRatio": 0.04,
+    "whiteRatio": 0.01,
+    "greenRatio": 0.5,
+    "brightness": 0.5,
+    "sharpness": 0.05
+   },
+   "expect": {
+    "conditionId": null,
+    "level": "low",
+    "quality": "blurry"
+   }
+  },
+  {
+   "name": "healthy maize photo",
+   "cropId": "maize",
+   "symptoms": [],
+   "features": {
+    "brownRatio": 0.005,
+    "yellowRatio": 0.01,
+    "whiteRatio": 0.01,
+    "greenRatio": 0.78,
+    "brightness": 0.55,
+    "sharpness": 0.55
+   },
+   "expect": {
+    "conditionId": "healthy",
+    "level": "medium"
+   }
+  },
+  {
+   "name": "potato late blight",
+   "cropId": "potato",
+   "symptoms": [
+    "dark_patches",
+    "powder_white"
+   ],
+   "features": null,
+   "expect": {
+    "conditionId": "potato_late_blight",
+    "level": "high"
+   }
+  },
+  {
+   "name": "banana wilt",
+   "cropId": "banana",
+   "symptoms": [
+    "yellowing",
+    "wilting",
+    "ooze"
+   ],
+   "features": null,
+   "expect": {
+    "conditionId": "banana_xanthomonas_wilt",
+    "level": "high"
+   }
+  },
+  {
+   "name": "coffee rust",
+   "cropId": "coffee",
+   "symptoms": [
+    "powder_orange"
+   ],
+   "features": null,
+   "expect": {
+    "conditionId": "coffee_leaf_rust",
+    "level": "high"
+   }
+  },
+  {
+   "name": "maize yellowing only is ambiguous",
+   "cropId": "maize",
+   "symptoms": [
+    "yellowing"
+   ],
+   "features": null,
+   "expect": {
+    "conditionId": null,
+    "levelNot": "high"
+   }
+  },
+  {
+   "name": "no symptoms and no photo features",
+   "cropId": "beans",
+   "symptoms": [],
+   "features": null,
+   "expect": {
+    "conditionId": null,
+    "level": "low"
+   }
+  },
+  {
+   "name": "dark photo",
+   "cropId": "potato",
+   "symptoms": [
+    "dark_patches"
+   ],
+   "features": {
+    "brownRatio": 0.02,
+    "yellowRatio": 0.0,
+    "whiteRatio": 0.0,
+    "greenRatio": 0.1,
+    "brightness": 0.08,
+    "sharpness": 0.4
+   },
+   "expect": {
+    "conditionId": null,
+    "level": "low",
+    "quality": "dark"
+   }
+  }
+ ]
+}

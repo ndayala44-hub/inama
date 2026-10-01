@@ -1,0 +1,17 @@
+{
+ "success": true,
+ "data": {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYV8wYWU0ZTkxYTYwYzAxMmUxIiwicGhvbmUiOiIrMjUwNzg4MTIzNDU2IiwiaXNzIjoiaW5hbWEtdjEiLCJpYXQiOjE3OTA3NjY2NjYsImV4cCI6MTc5MzM1ODY2Nn0.chlsqn81OMvgu6_TWJOcpVyLTYNzWl5FJ6I2a0Xh-eI",
+  "farmer": {
+   "id": "fa_0ae4e91a60c012e1",
+   "phone": "+250788123456",
+   "name": "",
+   "district": "",
+   "sector": "",
+   "crops": [],
+   "language": "en",
+   "createdAt": "2026-09-30T11:11:06.266Z"
+  },
+  "isNew": true
+ }
+}

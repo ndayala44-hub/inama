@@ -1,0 +1,21 @@
+{
+ "success": true,
+ "data": {
+  "id": "case_1ed433df8aa1517c",
+  "diagnosisId": "dg_acd25a3085906ae9",
+  "note": "Please check",
+  "status": "answered",
+  "expert": {
+   "name": "Your farmer promoter",
+   "role": "farmer_promoter"
+  },
+  "expectedReplyHours": 3,
+  "createdAt": "2026-09-30T11:11:06.286Z",
+  "reply": {
+   "text": "I looked at your photos. It looks like cassava bacterial blight. Pull out plants with drying shoots and burn them away from the field. Follow the steps in the app and send me a new photo in a week.",
+   "conditionId": "cassava_bacterial_blight",
+   "at": "2026-09-30T11:11:07.390Z",
+   "byPerson": true
+  }
+ }
+}

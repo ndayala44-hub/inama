@@ -1,0 +1,117 @@
+{
+ "success": true,
+ "data": {
+  "place": "Bugesera",
+  "current": {
+   "tempC": 24,
+   "windKph": 11,
+   "humidity": 66,
+   "condition": "sunny",
+   "rainChance": 10
+  },
+  "days": [
+   {
+    "date": "2026-09-30",
+    "label": "Today",
+    "highC": 27,
+    "lowC": 17,
+    "rainChance": 10,
+    "rainMm": 0,
+    "condition": "sunny"
+   },
+   {
+    "date": "2026-10-01",
+    "label": "Thu",
+    "highC": 26,
+    "lowC": 15,
+    "rainChance": 45,
+    "rainMm": 2,
+    "condition": "partly_cloudy"
+   },
+   {
+    "date": "2026-10-02",
+    "label": "Fri",
+    "highC": 25,
+    "lowC": 16,
+    "rainChance": 70,
+    "rainMm": 14,
+    "condition": "storm"
+   },
+   {
+    "date": "2026-10-03",
+    "label": "Sat",
+    "highC": 26,
+    "lowC": 17,
+    "rainChance": 35,
+    "rainMm": 2,
+    "condition": "partly_cloudy"
+   },
+   {
+    "date": "2026-10-04",
+    "label": "Sun",
+    "highC": 27,
+    "lowC": 15,
+    "rainChance": 15,
+    "rainMm": 0,
+    "condition": "sunny"
+   },
+   {
+    "date": "2026-10-05",
+    "label": "Mon",
+    "highC": 26,
+    "lowC": 16,
+    "rainChance": 25,
+    "rainMm": 2,
+    "condition": "partly_cloudy"
+   },
+   {
+    "date": "2026-10-06",
+    "label": "Tue",
+    "highC": 25,
+    "lowC": 17,
+    "rainChance": 80,
+    "rainMm": 16,
+    "condition": "storm"
+   }
+  ],
+  "source": "demo",
+  "updatedAt": "2026-09-30T11:11:07.396Z",
+  "decisions": [
+   {
+    "activity": "spraying",
+    "label": "Spraying",
+    "verdict": "go",
+    "reasonCode": "spray_go",
+    "reason": "Calm and dry — spray early in the morning."
+   },
+   {
+    "activity": "weeding",
+    "label": "Weeding",
+    "verdict": "go",
+    "reasonCode": "weed_go",
+    "reason": "Good day to weed."
+   },
+   {
+    "activity": "planting",
+    "label": "Planting",
+    "verdict": "careful",
+    "reasonCode": "plant_mixed",
+    "reason": "Rain is patchy — plant only if the soil is moist."
+   },
+   {
+    "activity": "drying",
+    "label": "Drying harvest",
+    "verdict": "go",
+    "reasonCode": "dry_go",
+    "reason": "Sunny enough to dry your harvest."
+   }
+  ],
+  "alerts": [
+   {
+    "code": "heavy_rain",
+    "date": "2026-10-02",
+    "message": "Heavy rain expected on Fri."
+   }
+  ]
+ }
+}

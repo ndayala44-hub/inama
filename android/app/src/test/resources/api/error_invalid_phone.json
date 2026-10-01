@@ -1,0 +1,7 @@
+{
+ "success": false,
+ "error": {
+  "code": "invalid_phone",
+  "message": "Enter a Rwandan mobile number, for example 07XX XXX XXX."
+ }
+}

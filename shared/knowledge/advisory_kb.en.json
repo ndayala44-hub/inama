@@ -1,0 +1,1775 @@
+{
+ "schemaVersion": 1,
+ "language": "en",
+ "reviewStatus": "draft",
+ "reviewNote": "Demo content written for the Inama MVP. It must be reviewed and validated by RAB agronomists before real farmers rely on it.",
+ "engine": {
+  "id": "inama-kb",
+  "version": "1.0.0",
+  "thresholds": {
+   "high": 0.75,
+   "medium": 0.5
+  },
+  "ambiguityMargin": 0.08,
+  "ambiguousCap": 0.6,
+  "photoOnlyFactor": 0.45,
+  "healthyCap": 0.7,
+  "healthyMaxBlemish": 0.35,
+  "weights": {
+   "symptomMatch": 0.55,
+   "coverage": 0.25,
+   "visual": 0.2
+  },
+  "visualScale": {
+   "brown": 0.15,
+   "yellow": 0.2,
+   "white": 0.1,
+   "green": 0.6
+  },
+  "quality": {
+   "minSharpness": 0.12,
+   "minBrightness": 0.15,
+   "maxBrightness": 0.92
+  }
+ },
+ "symptoms": [
+  {
+   "id": "brown_spots",
+   "label": "Brown spots on leaves"
+  },
+  {
+   "id": "yellowing",
+   "label": "Leaves turning yellow"
+  },
+  {
+   "id": "yellow_streaks",
+   "label": "Yellow stripes or streaks"
+  },
+  {
+   "id": "mosaic",
+   "label": "Patchy yellow-green pattern"
+  },
+  {
+   "id": "holes",
+   "label": "Holes or ragged leaves"
+  },
+  {
+   "id": "frass",
+   "label": "Sawdust-like droppings"
+  },
+  {
+   "id": "wilting",
+   "label": "Wilting or drooping"
+  },
+  {
+   "id": "drying_tips",
+   "label": "Tips or shoots drying out"
+  },
+  {
+   "id": "powder_orange",
+   "label": "Orange, rust-coloured powder"
+  },
+  {
+   "id": "powder_white",
+   "label": "White powder or mould"
+  },
+  {
+   "id": "dark_patches",
+   "label": "Dark, wet-looking patches"
+  },
+  {
+   "id": "ooze",
+   "label": "Sticky ooze or gum"
+  },
+  {
+   "id": "stunted",
+   "label": "Small, stunted plants"
+  },
+  {
+   "id": "rotting",
+   "label": "Rotting stems, roots or fruit"
+  },
+  {
+   "id": "insects",
+   "label": "Insects on the plant"
+  },
+  {
+   "id": "curling",
+   "label": "Curled or twisted leaves"
+  },
+  {
+   "id": "lesions_long",
+   "label": "Long grey-brown streaks on leaves"
+  },
+  {
+   "id": "mines",
+   "label": "Winding trails inside leaves"
+  },
+  {
+   "id": "parasitic_weed",
+   "label": "Purple-flowered weeds at the base"
+  }
+ ],
+ "crops": [
+  {
+   "id": "maize",
+   "name": "Maize",
+   "seasonDays": 120,
+   "stages": [
+    {
+     "id": "seedling",
+     "name": "Seedling",
+     "fromDay": 0,
+     "toDay": 14
+    },
+    {
+     "id": "young",
+     "name": "Young",
+     "fromDay": 15,
+     "toDay": 35
+    },
+    {
+     "id": "knee_high",
+     "name": "Knee-high",
+     "fromDay": 36,
+     "toDay": 60
+    },
+    {
+     "id": "tasselling",
+     "name": "Tasselling",
+     "fromDay": 61,
+     "toDay": 90
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 91,
+     "toDay": 150
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 7,
+     "toDay": 45,
+     "urgency": "this_week",
+     "title": "Check your maize for armyworm",
+     "body": "Young maize is hit hardest by fall armyworm. Walk your field in a W and look closely at 20 plants.",
+     "conditionId": "maize_fall_armyworm"
+    },
+    {
+     "fromDay": 36,
+     "toDay": 55,
+     "urgency": "plan",
+     "title": "Top-dress maize when it is knee-high",
+     "body": "Maize needs nitrogen most at knee height. Put a small pinch of urea in a ring a hand-width from each plant, then cover it with soil.",
+     "conditionId": null
+    },
+    {
+     "fromDay": 100,
+     "toDay": 150,
+     "urgency": "plan",
+     "title": "Dry maize well before storing",
+     "body": "Dry cobs until a grain cracks when you bite it, then store in airtight bags off the floor.",
+     "conditionId": null
+    }
+   ]
+  },
+  {
+   "id": "beans",
+   "name": "Beans",
+   "seasonDays": 90,
+   "stages": [
+    {
+     "id": "seedling",
+     "name": "Seedling",
+     "fromDay": 0,
+     "toDay": 14
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 15,
+     "toDay": 35
+    },
+    {
+     "id": "flowering",
+     "name": "Flowering",
+     "fromDay": 36,
+     "toDay": 55
+    },
+    {
+     "id": "pod_fill",
+     "name": "Pods filling",
+     "fromDay": 56,
+     "toDay": 75
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 76,
+     "toDay": 110
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 10,
+     "toDay": 30,
+     "urgency": "this_week",
+     "title": "Weed your beans early",
+     "body": "Weeds take the water and food your beans need. Weed before flowering, when the soil is not wet.",
+     "conditionId": null
+    },
+    {
+     "fromDay": 30,
+     "toDay": 60,
+     "urgency": "watch",
+     "title": "Look under bean leaves for rust",
+     "body": "Rusty powder under the leaves means bean rust. Check a few plants each week after rain.",
+     "conditionId": "beans_rust"
+    }
+   ]
+  },
+  {
+   "id": "cassava",
+   "name": "Cassava",
+   "seasonDays": 365,
+   "stages": [
+    {
+     "id": "establishment",
+     "name": "Establishing",
+     "fromDay": 0,
+     "toDay": 60
+    },
+    {
+     "id": "canopy",
+     "name": "Growing",
+     "fromDay": 61,
+     "toDay": 180
+    },
+    {
+     "id": "bulking",
+     "name": "Roots filling",
+     "fromDay": 181,
+     "toDay": 300
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 301,
+     "toDay": 540
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 30,
+     "toDay": 400,
+     "urgency": "watch",
+     "title": "Check cassava leaves for disease",
+     "body": "Look for mosaic patterns, brown spots or drying shoots. Pull out sick plants early so disease does not spread.",
+     "conditionId": "cassava_mosaic"
+    }
+   ]
+  },
+  {
+   "id": "potato",
+   "name": "Irish potato",
+   "seasonDays": 110,
+   "stages": [
+    {
+     "id": "sprouting",
+     "name": "Sprouting",
+     "fromDay": 0,
+     "toDay": 20
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 21,
+     "toDay": 45
+    },
+    {
+     "id": "flowering",
+     "name": "Flowering",
+     "fromDay": 46,
+     "toDay": 70
+    },
+    {
+     "id": "bulking",
+     "name": "Tubers filling",
+     "fromDay": 71,
+     "toDay": 95
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 96,
+     "toDay": 140
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 20,
+     "toDay": 95,
+     "urgency": "this_week",
+     "title": "Watch potatoes for late blight after rain",
+     "body": "Cool, wet weather brings late blight fast. Check leaves for dark, wet-looking patches.",
+     "conditionId": "potato_late_blight"
+    }
+   ]
+  },
+  {
+   "id": "banana",
+   "name": "Banana",
+   "seasonDays": 450,
+   "stages": [
+    {
+     "id": "sucker",
+     "name": "Young sucker",
+     "fromDay": 0,
+     "toDay": 120
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 121,
+     "toDay": 300
+    },
+    {
+     "id": "flowering",
+     "name": "Flowering",
+     "fromDay": 301,
+     "toDay": 360
+    },
+    {
+     "id": "bunch",
+     "name": "Bunch filling",
+     "fromDay": 361,
+     "toDay": 450
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 0,
+     "toDay": 600,
+     "urgency": "watch",
+     "title": "Watch bananas for wilt",
+     "body": "Yellow, wilting leaves and early-ripening fruit can mean banana wilt. Clean tools between plants.",
+     "conditionId": "banana_xanthomonas_wilt"
+    }
+   ]
+  },
+  {
+   "id": "sweetpotato",
+   "name": "Sweet potato",
+   "seasonDays": 140,
+   "stages": [
+    {
+     "id": "establishment",
+     "name": "Establishing",
+     "fromDay": 0,
+     "toDay": 30
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 31,
+     "toDay": 80
+    },
+    {
+     "id": "bulking",
+     "name": "Roots filling",
+     "fromDay": 81,
+     "toDay": 130
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 131,
+     "toDay": 170
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 20,
+     "toDay": 120,
+     "urgency": "watch",
+     "title": "Hill up sweet potato soil",
+     "body": "Cover cracks in the soil around roots to keep weevils out.",
+     "conditionId": "sweetpotato_weevil"
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "name": "Rice",
+   "seasonDays": 130,
+   "stages": [
+    {
+     "id": "nursery",
+     "name": "Nursery",
+     "fromDay": 0,
+     "toDay": 25
+    },
+    {
+     "id": "tillering",
+     "name": "Tillering",
+     "fromDay": 26,
+     "toDay": 60
+    },
+    {
+     "id": "panicle",
+     "name": "Panicle forming",
+     "fromDay": 61,
+     "toDay": 95
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 96,
+     "toDay": 150
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 26,
+     "toDay": 95,
+     "urgency": "watch",
+     "title": "Check rice for blast",
+     "body": "Diamond-shaped spots with grey centres are rice blast. Check after cool, wet nights.",
+     "conditionId": "rice_blast"
+    }
+   ]
+  },
+  {
+   "id": "coffee",
+   "name": "Coffee",
+   "seasonDays": 365,
+   "stages": [
+    {
+     "id": "flowering",
+     "name": "Flowering",
+     "fromDay": 0,
+     "toDay": 60
+    },
+    {
+     "id": "cherry_growth",
+     "name": "Cherries growing",
+     "fromDay": 61,
+     "toDay": 240
+    },
+    {
+     "id": "ripening",
+     "name": "Ripening",
+     "fromDay": 241,
+     "toDay": 330
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 331,
+     "toDay": 400
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 0,
+     "toDay": 400,
+     "urgency": "watch",
+     "title": "Look under coffee leaves for rust",
+     "body": "Orange powder under the leaves is coffee leaf rust. Prune for airflow and remove fallen leaves.",
+     "conditionId": "coffee_leaf_rust"
+    }
+   ]
+  },
+  {
+   "id": "sorghum",
+   "name": "Sorghum",
+   "seasonDays": 120,
+   "stages": [
+    {
+     "id": "seedling",
+     "name": "Seedling",
+     "fromDay": 0,
+     "toDay": 20
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 21,
+     "toDay": 60
+    },
+    {
+     "id": "heading",
+     "name": "Heading",
+     "fromDay": 61,
+     "toDay": 90
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest",
+     "fromDay": 91,
+     "toDay": 140
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 20,
+     "toDay": 70,
+     "urgency": "watch",
+     "title": "Pull out striga before it flowers",
+     "body": "Striga steals water and food from sorghum. Pull it by hand before it seeds.",
+     "conditionId": "sorghum_striga"
+    }
+   ]
+  },
+  {
+   "id": "tomato",
+   "name": "Tomato",
+   "seasonDays": 110,
+   "stages": [
+    {
+     "id": "seedling",
+     "name": "Seedling",
+     "fromDay": 0,
+     "toDay": 25
+    },
+    {
+     "id": "vegetative",
+     "name": "Growing",
+     "fromDay": 26,
+     "toDay": 50
+    },
+    {
+     "id": "flowering",
+     "name": "Flowering",
+     "fromDay": 51,
+     "toDay": 70
+    },
+    {
+     "id": "fruiting",
+     "name": "Fruiting",
+     "fromDay": 71,
+     "toDay": 110
+    }
+   ],
+   "stageTips": [
+    {
+     "fromDay": 20,
+     "toDay": 110,
+     "urgency": "watch",
+     "title": "Check tomato leaves for leaf miner",
+     "body": "Winding trails inside leaves mean Tuta absoluta. Remove affected leaves early.",
+     "conditionId": "tomato_tuta_absoluta"
+    }
+   ]
+  }
+ ],
+ "conditions": [
+  {
+   "id": "maize_fall_armyworm",
+   "cropId": "maize",
+   "name": "Fall armyworm",
+   "type": "pest",
+   "headline": "Your maize may have fall armyworm",
+   "cues": {
+    "holes": 0.95,
+    "frass": 0.95,
+    "insects": 0.6
+   },
+   "visual": {
+    "brown": 0.2,
+    "yellow": 0.1,
+    "white": 0.4
+   },
+   "signs": [
+    "Small “windows” or ragged holes in young leaves",
+    "Sawdust-like droppings in the funnel",
+    "Caterpillars hiding in the funnel"
+   ],
+   "notSeenHint": "A pale Y shape on the caterpillar’s head — look closely",
+   "urgency": "today",
+   "whatsHappening": "Fall armyworm caterpillars are feeding inside the funnel of your maize.",
+   "whyItMatters": "Young maize can lose its growing point in a few days, and the caterpillars move from plant to plant.",
+   "steps": [
+    "Walk your field in a W and look closely at 20 plants.",
+    "Crush egg clusters and small caterpillars by hand.",
+    "Put a pinch of dry soil or ash into each damaged funnel.",
+    "If 4 or more of the 20 plants have fresh damage: If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away.",
+    "Check again in 3 days."
+   ],
+   "sources": [
+    "FAO guidance on fall armyworm management",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "maize_lethal_necrosis",
+   "cropId": "maize",
+   "name": "Maize lethal necrosis",
+   "type": "disease",
+   "headline": "Your maize may have maize lethal necrosis",
+   "cues": {
+    "yellowing": 0.7,
+    "drying_tips": 0.85,
+    "mosaic": 0.6,
+    "stunted": 0.6
+   },
+   "visual": {
+    "yellow": 0.7,
+    "brown": 0.5
+   },
+   "signs": [
+    "Yellowing that starts at the leaf edges",
+    "Leaves drying from the edges inwards",
+    "Plants stay small"
+   ],
+   "notSeenHint": "Rotten cobs with few grains — check the ears",
+   "urgency": "this_week",
+   "whatsHappening": "A virus disease is making the leaves yellow and dry from the edges.",
+   "whyItMatters": "It spreads through insects and infected seed, and badly affected plants give no harvest.",
+   "steps": [
+    "Pull out affected plants and bury or burn them away from the field.",
+    "Do not plant maize again in this field next season — rotate with beans.",
+    "Use certified seed from a registered agro-dealer.",
+    "Tell your farmer promoter so neighbours can check their fields."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "maize_northern_leaf_blight",
+   "cropId": "maize",
+   "name": "Northern leaf blight",
+   "type": "disease",
+   "headline": "Your maize may have northern leaf blight",
+   "cues": {
+    "lesions_long": 0.95,
+    "brown_spots": 0.5,
+    "drying_tips": 0.3
+   },
+   "visual": {
+    "brown": 0.7
+   },
+   "signs": [
+    "Long, cigar-shaped grey-brown streaks",
+    "Streaks start on the lower leaves"
+   ],
+   "notSeenHint": "Dark mould inside the streaks in wet weather",
+   "urgency": "watch",
+   "whatsHappening": "A fungus is making long grey-brown streaks on the leaves.",
+   "whyItMatters": "If it reaches the upper leaves before the cobs fill, your harvest will be smaller.",
+   "steps": [
+    "Keep checking the upper leaves each week.",
+    "After harvest, remove or bury maize stalks.",
+    "Next season, rotate with beans and choose a tolerant variety."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "maize_streak_virus",
+   "cropId": "maize",
+   "name": "Maize streak virus",
+   "type": "disease",
+   "headline": "Your maize may have maize streak virus",
+   "cues": {
+    "yellow_streaks": 0.95,
+    "stunted": 0.5
+   },
+   "visual": {
+    "yellow": 0.6
+   },
+   "signs": [
+    "Thin yellow streaks along the leaf veins",
+    "Young plants stay small"
+   ],
+   "notSeenHint": "Small leafhoppers on the leaves",
+   "urgency": "this_week",
+   "whatsHappening": "A virus spread by leafhoppers is making yellow streaks on the leaves.",
+   "whyItMatters": "Plants infected when young often give very small cobs.",
+   "steps": [
+    "Pull out badly affected young plants.",
+    "Keep the field free of grassy weeds where leafhoppers live.",
+    "Next season, plant early and use a resistant variety."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "maize_nitrogen_deficiency",
+   "cropId": "maize",
+   "name": "Nitrogen shortage",
+   "type": "deficiency",
+   "headline": "Your maize may be short of nitrogen",
+   "cues": {
+    "yellowing": 0.8,
+    "stunted": 0.4
+   },
+   "visual": {
+    "yellow": 0.7
+   },
+   "signs": [
+    "Yellowing that starts on the lower, older leaves",
+    "A yellow V shape from the leaf tip"
+   ],
+   "notSeenHint": null,
+   "urgency": "plan",
+   "whatsHappening": "Your maize is not getting enough nitrogen from the soil.",
+   "whyItMatters": "Nitrogen is what makes maize green and strong; without it the cobs stay small.",
+   "steps": [
+    "Top-dress with urea when the soil is moist: a small pinch in a ring a hand-width from each plant.",
+    "Cover the fertilizer with soil.",
+    "Mix compost or well-rotted manure into the soil every season."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "beans_angular_leaf_spot",
+   "cropId": "beans",
+   "name": "Angular leaf spot",
+   "type": "disease",
+   "headline": "Your beans may have angular leaf spot",
+   "cues": {
+    "brown_spots": 0.9,
+    "yellowing": 0.3
+   },
+   "visual": {
+    "brown": 0.6
+   },
+   "signs": [
+    "Brown spots with straight edges that stop at the leaf veins",
+    "Spots appear after rain"
+   ],
+   "notSeenHint": "Brown spots on the pods",
+   "urgency": "watch",
+   "whatsHappening": "A fungus is making angular brown spots on the leaves.",
+   "whyItMatters": "It spreads in wet weather and through seed, and can make leaves fall early.",
+   "steps": [
+    "Pick off the worst leaves and remove them from the field.",
+    "Do not work in the field while the leaves are wet.",
+    "Next season, use clean seed and rotate with maize."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "beans_rust",
+   "cropId": "beans",
+   "name": "Bean rust",
+   "type": "disease",
+   "headline": "Your beans may have bean rust",
+   "cues": {
+    "powder_orange": 0.95,
+    "brown_spots": 0.5,
+    "yellowing": 0.3
+   },
+   "visual": {
+    "brown": 0.5,
+    "yellow": 0.3
+   },
+   "signs": [
+    "Rusty powder under the leaves",
+    "Small raised spots that rub off on your finger"
+   ],
+   "notSeenHint": "Yellow rings around the spots",
+   "urgency": "this_week",
+   "whatsHappening": "A rust fungus is growing on the leaves.",
+   "whyItMatters": "It spreads fast with wind and dew and can cut your harvest if it starts before flowering.",
+   "steps": [
+    "Remove badly affected leaves.",
+    "Give plants space so air can move between them.",
+    "Next season, plant a rust-tolerant variety."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "beans_anthracnose",
+   "cropId": "beans",
+   "name": "Anthracnose",
+   "type": "disease",
+   "headline": "Your beans may have anthracnose",
+   "cues": {
+    "dark_patches": 0.8,
+    "brown_spots": 0.5,
+    "rotting": 0.4
+   },
+   "visual": {
+    "brown": 0.7
+   },
+   "signs": [
+    "Dark, sunken spots on pods",
+    "Dark lines along the leaf veins underneath"
+   ],
+   "notSeenHint": "Brown-black spots on the seeds",
+   "urgency": "this_week",
+   "whatsHappening": "A fungus is making dark sunken spots on the pods and leaves.",
+   "whyItMatters": "Infected seed carries it into next season.",
+   "steps": [
+    "Remove affected plants and pods.",
+    "Do not keep seed from this field.",
+    "Rotate beans with maize or sorghum."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "beans_common_mosaic",
+   "cropId": "beans",
+   "name": "Bean common mosaic",
+   "type": "disease",
+   "headline": "Your beans may have bean common mosaic",
+   "cues": {
+    "mosaic": 0.95,
+    "curling": 0.6,
+    "stunted": 0.5
+   },
+   "visual": {
+    "yellow": 0.5
+   },
+   "signs": [
+    "Light and dark green patches on the leaves",
+    "Leaves curl downwards"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "A virus is making a light and dark green pattern on the leaves.",
+   "whyItMatters": "Aphids and infected seed spread it; sick plants give fewer pods.",
+   "steps": [
+    "Pull out plants with strong symptoms.",
+    "Use certified seed next season.",
+    "Keep the field free of weeds."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "cassava_bacterial_blight",
+   "cropId": "cassava",
+   "name": "Cassava bacterial blight",
+   "type": "disease",
+   "headline": "Your cassava may have bacterial blight",
+   "cues": {
+    "brown_spots": 0.85,
+    "drying_tips": 0.85,
+    "wilting": 0.7,
+    "ooze": 0.7
+   },
+   "visual": {
+    "brown": 0.7,
+    "yellow": 0.3
+   },
+   "signs": [
+    "Angular brown spots between leaf veins",
+    "Yellow edges around the spots",
+    "Shoot tips drying out"
+   ],
+   "notSeenHint": "Sticky gum on stems — look for it",
+   "urgency": "this_week",
+   "whatsHappening": "Bacteria are making brown, angular spots on the leaves, and some shoots are drying from the tip.",
+   "whyItMatters": "It spreads through cuttings, tools and rain splash. Left alone it moves across the field and cuts your harvest.",
+   "steps": [
+    "Pull out plants with drying shoots and burn them away from the field.",
+    "Don’t take cuttings from this field for planting.",
+    "Clean your hoe and panga after working here.",
+    "Next season, plant clean cuttings of a resistant variety — your farmer promoter can help you find them."
+   ],
+   "sources": [
+    "IITA cassava disease guidance",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "cassava_brown_streak",
+   "cropId": "cassava",
+   "name": "Cassava brown streak",
+   "type": "disease",
+   "headline": "Your cassava may have brown streak disease",
+   "cues": {
+    "yellowing": 0.6,
+    "rotting": 0.8,
+    "brown_spots": 0.3
+   },
+   "visual": {
+    "yellow": 0.6
+   },
+   "signs": [
+    "Feathery yellow patches along the leaf veins",
+    "Brown streaks on green stems"
+   ],
+   "notSeenHint": "Brown, dry rot inside the roots — cut one open",
+   "urgency": "this_week",
+   "whatsHappening": "A virus is causing yellow patches on the leaves and can rot the roots.",
+   "whyItMatters": "The roots can look fine outside but be spoiled inside, so the harvest is lost.",
+   "steps": [
+    "Harvest affected plants early if the roots are big enough.",
+    "Don’t use cuttings from these plants.",
+    "Plant a tolerant variety from a trusted source next season."
+   ],
+   "sources": [
+    "IITA cassava disease guidance",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "cassava_mosaic",
+   "cropId": "cassava",
+   "name": "Cassava mosaic disease",
+   "type": "disease",
+   "headline": "Your cassava may have mosaic disease",
+   "cues": {
+    "mosaic": 0.95,
+    "curling": 0.8,
+    "stunted": 0.6
+   },
+   "visual": {
+    "yellow": 0.7
+   },
+   "signs": [
+    "Yellow and green patches on the leaves",
+    "Twisted, smaller leaves"
+   ],
+   "notSeenHint": "Whiteflies under the leaves",
+   "urgency": "watch",
+   "whatsHappening": "A virus spread by whiteflies and cuttings is twisting the leaves.",
+   "whyItMatters": "Sick plants make fewer, smaller roots.",
+   "steps": [
+    "Pull out plants with strong symptoms early.",
+    "Use cuttings only from healthy plants.",
+    "Plant a resistant variety next season."
+   ],
+   "sources": [
+    "IITA cassava disease guidance",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "cassava_green_mite",
+   "cropId": "cassava",
+   "name": "Cassava green mite",
+   "type": "pest",
+   "headline": "Your cassava may have green mites",
+   "cues": {
+    "yellowing": 0.5,
+    "stunted": 0.5,
+    "insects": 0.5
+   },
+   "visual": {
+    "yellow": 0.6
+   },
+   "signs": [
+    "Pale yellow speckles on young leaves",
+    "Small, bunched leaves at the tips"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "Tiny mites are feeding on the young leaves, usually in dry weather.",
+   "whyItMatters": "Heavy attacks slow growth until the rains return.",
+   "steps": [
+    "Check the tips of a few plants each week.",
+    "Mulch to keep the soil moist.",
+    "Growth usually recovers when the rains come."
+   ],
+   "sources": [
+    "IITA cassava disease guidance"
+   ]
+  },
+  {
+   "id": "potato_late_blight",
+   "cropId": "potato",
+   "name": "Late blight",
+   "type": "disease",
+   "headline": "Your potatoes may have late blight",
+   "cues": {
+    "dark_patches": 0.95,
+    "powder_white": 0.8,
+    "rotting": 0.5,
+    "wilting": 0.3
+   },
+   "visual": {
+    "brown": 0.7,
+    "white": 0.4
+   },
+   "signs": [
+    "Dark, wet-looking patches on leaves",
+    "White mould under the leaves in the morning"
+   ],
+   "notSeenHint": "Brown rot on the tubers",
+   "urgency": "today",
+   "whatsHappening": "A fast-spreading fungus-like disease is killing leaves.",
+   "whyItMatters": "In cool, wet weather it can destroy a whole field in a week.",
+   "steps": [
+    "Remove and bury badly affected plants today.",
+    "If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away.",
+    "Hill up soil around plants to protect the tubers.",
+    "Harvest only when the soil is dry."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "potato_bacterial_wilt",
+   "cropId": "potato",
+   "name": "Bacterial wilt",
+   "type": "disease",
+   "headline": "Your potatoes may have bacterial wilt",
+   "cues": {
+    "wilting": 0.95,
+    "rotting": 0.6,
+    "ooze": 0.6
+   },
+   "visual": {},
+   "signs": [
+    "Plants wilt suddenly while the leaves are still green",
+    "Milky ooze from cut tubers"
+   ],
+   "notSeenHint": "Put a cut stem in water — milky threads mean wilt",
+   "urgency": "today",
+   "whatsHappening": "Bacteria in the soil are blocking water inside the plant.",
+   "whyItMatters": "It stays in the soil for years and spreads with seed tubers and water.",
+   "steps": [
+    "Pull out wilted plants with their tubers and bury them far from the field.",
+    "Don’t keep seed from this field.",
+    "Don’t plant potato, tomato or eggplant here for at least 2 seasons."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "potato_early_blight",
+   "cropId": "potato",
+   "name": "Early blight",
+   "type": "disease",
+   "headline": "Your potatoes may have early blight",
+   "cues": {
+    "brown_spots": 0.8,
+    "yellowing": 0.4
+   },
+   "visual": {
+    "brown": 0.6
+   },
+   "signs": [
+    "Brown spots with rings like a target",
+    "Starts on older, lower leaves"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "A fungus is making target-like spots on the older leaves.",
+   "whyItMatters": "It weakens the plant and makes tubers smaller.",
+   "steps": [
+    "Remove the worst lower leaves.",
+    "Keep plants well fed with compost or manure.",
+    "Rotate potatoes with beans or maize."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "banana_xanthomonas_wilt",
+   "cropId": "banana",
+   "name": "Banana wilt (BXW)",
+   "type": "disease",
+   "headline": "Your banana may have banana wilt",
+   "cues": {
+    "yellowing": 0.8,
+    "wilting": 0.9,
+    "ooze": 0.8,
+    "rotting": 0.6
+   },
+   "visual": {
+    "yellow": 0.7,
+    "brown": 0.4
+   },
+   "signs": [
+    "Leaves turn yellow and wilt",
+    "Fruit ripens early and unevenly",
+    "Yellow ooze from cut stems"
+   ],
+   "notSeenHint": "Shrivelled male bud — check the bunch",
+   "urgency": "today",
+   "whatsHappening": "Bacteria are blocking the water inside the plant.",
+   "whyItMatters": "It spreads fast on tools and through insects visiting the male flower.",
+   "steps": [
+    "Cut down the sick plant and bury it on the spot.",
+    "Clean tools in fire or household bleach after each plant.",
+    "Remove male buds with a forked stick, not a knife.",
+    "Don’t move suckers from this field."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "banana_black_sigatoka",
+   "cropId": "banana",
+   "name": "Black sigatoka",
+   "type": "disease",
+   "headline": "Your banana may have black sigatoka",
+   "cues": {
+    "brown_spots": 0.6,
+    "yellow_streaks": 0.7,
+    "drying_tips": 0.5
+   },
+   "visual": {
+    "brown": 0.6,
+    "yellow": 0.4
+   },
+   "signs": [
+    "Yellow-brown streaks on the leaves",
+    "Leaves dry out from the edges"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "A fungus is making streaks and drying the leaves.",
+   "whyItMatters": "Fewer green leaves means smaller bunches.",
+   "steps": [
+    "Cut off badly affected leaves and use them as mulch away from the plants.",
+    "Keep the plantation open and weeded.",
+    "Feed plants with manure."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "tomato_late_blight",
+   "cropId": "tomato",
+   "name": "Late blight",
+   "type": "disease",
+   "headline": "Your tomatoes may have late blight",
+   "cues": {
+    "dark_patches": 0.9,
+    "powder_white": 0.6,
+    "rotting": 0.6
+   },
+   "visual": {
+    "brown": 0.7,
+    "white": 0.3
+   },
+   "signs": [
+    "Dark, greasy patches on leaves and stems",
+    "Brown, firm patches on the fruit"
+   ],
+   "notSeenHint": "White mould under the leaves in the morning",
+   "urgency": "today",
+   "whatsHappening": "A fast-spreading fungus-like disease is killing leaves and fruit.",
+   "whyItMatters": "In wet weather it can destroy the crop in days.",
+   "steps": [
+    "Remove affected leaves and fruit today.",
+    "If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away.",
+    "Stake plants so leaves stay off the soil."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "tomato_tuta_absoluta",
+   "cropId": "tomato",
+   "name": "Tomato leaf miner (Tuta absoluta)",
+   "type": "pest",
+   "headline": "Your tomatoes may have leaf miner",
+   "cues": {
+    "mines": 0.95,
+    "holes": 0.6,
+    "rotting": 0.3
+   },
+   "visual": {
+    "white": 0.4,
+    "brown": 0.3
+   },
+   "signs": [
+    "Winding, see-through trails inside the leaves",
+    "Small holes in the fruit"
+   ],
+   "notSeenHint": "Tiny caterpillars inside the trails",
+   "urgency": "this_week",
+   "whatsHappening": "Small caterpillars are eating inside the leaves and fruit.",
+   "whyItMatters": "They multiply quickly and can spoil most of the fruit.",
+   "steps": [
+    "Pick off and destroy leaves with trails.",
+    "Remove damaged fruit.",
+    "Ask your agro-dealer about pheromone traps.",
+    "If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "sweetpotato_virus_disease",
+   "cropId": "sweetpotato",
+   "name": "Sweet potato virus disease",
+   "type": "disease",
+   "headline": "Your sweet potato may have virus disease",
+   "cues": {
+    "mosaic": 0.8,
+    "curling": 0.7,
+    "stunted": 0.8
+   },
+   "visual": {
+    "yellow": 0.5
+   },
+   "signs": [
+    "Small, twisted leaves",
+    "Pale or patchy colour on leaves"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "Viruses spread by insects and vines are stunting the plants.",
+   "whyItMatters": "Sick plants make few, small roots.",
+   "steps": [
+    "Pull out plants with strong symptoms.",
+    "Plant vines only from healthy plants."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "sweetpotato_weevil",
+   "cropId": "sweetpotato",
+   "name": "Sweet potato weevil",
+   "type": "pest",
+   "headline": "Your sweet potato may have weevils",
+   "cues": {
+    "rotting": 0.8,
+    "wilting": 0.4,
+    "insects": 0.6
+   },
+   "visual": {
+    "brown": 0.4
+   },
+   "signs": [
+    "Tunnels and holes in the roots",
+    "Small ant-like insects near the base"
+   ],
+   "notSeenHint": "Bitter smell from damaged roots",
+   "urgency": "this_week",
+   "whatsHappening": "Weevils are tunnelling into the roots through cracks in the soil.",
+   "whyItMatters": "Damaged roots taste bitter and can’t be sold.",
+   "steps": [
+    "Harvest mature roots now.",
+    "Hill up soil to cover cracks.",
+    "Destroy old vines and damaged roots after harvest."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "rice_blast",
+   "cropId": "rice",
+   "name": "Rice blast",
+   "type": "disease",
+   "headline": "Your rice may have blast",
+   "cues": {
+    "brown_spots": 0.7,
+    "lesions_long": 0.5,
+    "drying_tips": 0.4
+   },
+   "visual": {
+    "brown": 0.6
+   },
+   "signs": [
+    "Diamond-shaped spots with grey centres",
+    "Broken, dark necks under the grain heads"
+   ],
+   "notSeenHint": null,
+   "urgency": "this_week",
+   "whatsHappening": "A fungus is making diamond-shaped spots on the leaves.",
+   "whyItMatters": "If it reaches the neck of the grain heads, the grain stays empty.",
+   "steps": [
+    "Don’t add more nitrogen fertilizer for now.",
+    "Keep the water level steady.",
+    "Ask your cooperative about a resistant variety."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "rice_yellow_mottle",
+   "cropId": "rice",
+   "name": "Rice yellow mottle virus",
+   "type": "disease",
+   "headline": "Your rice may have yellow mottle virus",
+   "cues": {
+    "yellowing": 0.7,
+    "mosaic": 0.6,
+    "stunted": 0.7
+   },
+   "visual": {
+    "yellow": 0.7
+   },
+   "signs": [
+    "Yellow-orange mottling on leaves",
+    "Fewer tillers and short plants"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "A virus is making the leaves mottled and the plants short.",
+   "whyItMatters": "Infected fields give much less grain.",
+   "steps": [
+    "Pull out sick plants early.",
+    "Remove volunteer rice and weeds around the field.",
+    "Plant a tolerant variety next season."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "coffee_leaf_rust",
+   "cropId": "coffee",
+   "name": "Coffee leaf rust",
+   "type": "disease",
+   "headline": "Your coffee may have leaf rust",
+   "cues": {
+    "powder_orange": 0.95,
+    "yellowing": 0.4
+   },
+   "visual": {
+    "yellow": 0.5,
+    "brown": 0.4
+   },
+   "signs": [
+    "Orange powder under the leaves",
+    "Pale yellow spots on the top of leaves"
+   ],
+   "notSeenHint": null,
+   "urgency": "this_week",
+   "whatsHappening": "A rust fungus is growing under the leaves.",
+   "whyItMatters": "Trees lose leaves and give fewer cherries next season.",
+   "steps": [
+    "Prune so air and light reach inside the tree.",
+    "Rake and bury fallen leaves.",
+    "If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "coffee_berry_disease",
+   "cropId": "coffee",
+   "name": "Coffee berry disease",
+   "type": "disease",
+   "headline": "Your coffee may have berry disease",
+   "cues": {
+    "dark_patches": 0.8,
+    "rotting": 0.6
+   },
+   "visual": {
+    "brown": 0.6
+   },
+   "signs": [
+    "Dark, sunken spots on green berries",
+    "Berries drop early"
+   ],
+   "notSeenHint": null,
+   "urgency": "this_week",
+   "whatsHappening": "A fungus is rotting the green berries.",
+   "whyItMatters": "It can take a large part of the crop in wet seasons.",
+   "steps": [
+    "Pick and bury infected berries.",
+    "Prune to open the tree.",
+    "If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "coffee_antestia",
+   "cropId": "coffee",
+   "name": "Antestia bug",
+   "type": "pest",
+   "headline": "Your coffee may have antestia bugs",
+   "cues": {
+    "insects": 0.85,
+    "rotting": 0.4
+   },
+   "visual": {},
+   "signs": [
+    "Brown-orange shield bugs on berries and flowers",
+    "Blackened flowers and berries"
+   ],
+   "notSeenHint": "Potato-like taste in the brewed coffee",
+   "urgency": "this_week",
+   "whatsHappening": "Antestia bugs are feeding on the flowers and berries.",
+   "whyItMatters": "They spoil beans and cause the potato taste that lowers coffee prices.",
+   "steps": [
+    "Hand-pick bugs early in the morning.",
+    "Prune so the tree is open.",
+    "Tell your cooperative so it can plan control."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "sorghum_anthracnose",
+   "cropId": "sorghum",
+   "name": "Sorghum anthracnose",
+   "type": "disease",
+   "headline": "Your sorghum may have anthracnose",
+   "cues": {
+    "brown_spots": 0.7,
+    "lesions_long": 0.5
+   },
+   "visual": {
+    "brown": 0.6
+   },
+   "signs": [
+    "Small red-purple spots on leaves",
+    "Spots join into long streaks"
+   ],
+   "notSeenHint": null,
+   "urgency": "watch",
+   "whatsHappening": "A fungus is spotting the leaves.",
+   "whyItMatters": "Heavy attacks reduce grain filling.",
+   "steps": [
+    "Remove crop leftovers after harvest.",
+    "Rotate with beans.",
+    "Use clean seed of a tolerant variety."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "sorghum_striga",
+   "cropId": "sorghum",
+   "name": "Striga (witchweed)",
+   "type": "weed",
+   "headline": "Your sorghum may have striga",
+   "cues": {
+    "parasitic_weed": 0.95,
+    "stunted": 0.7,
+    "yellowing": 0.5
+   },
+   "visual": {
+    "yellow": 0.4
+   },
+   "signs": [
+    "Small weeds with purple flowers at the base",
+    "Sorghum stays short and pale"
+   ],
+   "notSeenHint": null,
+   "urgency": "this_week",
+   "whatsHappening": "Striga is a weed that attaches to the sorghum roots and steals water and food.",
+   "whyItMatters": "Each plant makes thousands of seeds that stay in the soil for years.",
+   "steps": [
+    "Pull striga by hand before it flowers, and burn it.",
+    "Add compost or manure to the field.",
+    "Rotate with beans or soybean."
+   ],
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  }
+ ],
+ "lowConfidence": {
+  "headline": "Inama is not sure what this is",
+  "whatsHappening": "The signs could fit more than one problem.",
+  "whyItMatters": "Different problems need different care. A wrong spray costs money and doesn’t help.",
+  "steps": [
+   "Don’t spray yet.",
+   "Take a sharp photo of one sick leaf, close up, in daylight.",
+   "Send it to your farmer promoter or an agronomist to check."
+  ]
+ },
+ "healthy": {
+  "headline": "Your {crop} looks healthy",
+  "whatsHappening": "Inama didn’t find signs of disease or pests in this photo.",
+  "whyItMatters": "Checking early is how you catch problems while they are small.",
+  "steps": [
+   "Keep checking a few plants each week.",
+   "Keep the field weeded.",
+   "Check again after heavy rain."
+  ]
+ },
+ "photoProblems": {
+  "blurry": {
+   "title": "We couldn’t see the leaf clearly",
+   "body": "The photo is too blurry to check. Nothing is lost — take one more."
+  },
+  "dark": {
+   "title": "The photo is too dark",
+   "body": "Move into daylight or stand with the sun behind you, then take one more."
+  },
+  "bright": {
+   "title": "The photo is too bright",
+   "body": "Shade the leaf with your hand or body, then take one more."
+  },
+  "tips": [
+   "Hold the phone a hand-width from one leaf.",
+   "Stand with the sun behind you, not in front.",
+   "Keep still for 2 seconds while the photo is taken."
+  ]
+ },
+ "questions": [
+  {
+   "id": "q_armyworm",
+   "keywords": [
+    "armyworm",
+    "holes",
+    "caterpillar",
+    "worm",
+    "nkongwa"
+   ],
+   "cropId": "maize",
+   "conditionId": "maize_fall_armyworm",
+   "headline": "This sounds like fall armyworm",
+   "urgency": "today",
+   "confidence": 0.62,
+   "whatsHappening": "Small holes in young maize leaves are often the first sign of fall armyworm feeding inside the funnel.",
+   "whyItMatters": "Maize this young can lose many leaves in a week.",
+   "steps": [
+    "Walk your field in a W and look closely at 20 plants.",
+    "Crush egg clusters and small caterpillars by hand.",
+    "If 4 or more of the 20 plants have fresh damage: If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away."
+   ],
+   "followUp": "Add a photo so Inama can be surer.",
+   "sources": [
+    "FAO guidance on fall armyworm management",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_plant_when",
+   "keywords": [
+    "when",
+    "plant",
+    "sow",
+    "planting",
+    "season"
+   ],
+   "cropId": null,
+   "conditionId": null,
+   "headline": "Plant when the rains are steady",
+   "urgency": "plan",
+   "confidence": 0.7,
+   "whatsHappening": "Seeds need moist soil for about two weeks after planting to come up well.",
+   "whyItMatters": "Planting too early risks seeds drying out; too late shortens the season.",
+   "steps": [
+    "Plant after the soil is wet to about a hand’s depth.",
+    "Check the 7-day forecast on the Weather screen first.",
+    "Use certified seed from a registered agro-dealer."
+   ],
+   "followUp": null,
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_fertilizer",
+   "keywords": [
+    "fertilizer",
+    "fertiliser",
+    "urea",
+    "dap",
+    "npk",
+    "manure",
+    "compost"
+   ],
+   "cropId": null,
+   "conditionId": null,
+   "headline": "Feed the soil at planting and when plants grow fast",
+   "urgency": "plan",
+   "confidence": 0.7,
+   "whatsHappening": "Most crops need phosphorus at planting and nitrogen when they grow fastest.",
+   "whyItMatters": "Fertilizer at the wrong time or amount wastes money.",
+   "steps": [
+    "At planting: DAP or compost in the planting hole, covered with soil.",
+    "For maize: top-dress urea at knee height, a small pinch per plant, then cover it.",
+    "Buy through Smart Nkunganire to get the subsidy price."
+   ],
+   "followUp": "Tell Inama your crop and field size for exact amounts.",
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_rain_spray",
+   "keywords": [
+    "rain",
+    "spray",
+    "weather",
+    "wind"
+   ],
+   "cropId": null,
+   "conditionId": null,
+   "headline": "Don’t spray before rain or in strong wind",
+   "urgency": "this_week",
+   "confidence": 0.75,
+   "whatsHappening": "Rain washes pesticide off the leaves, and wind carries it onto people and water.",
+   "whyItMatters": "Spraying at the wrong time wastes money and can harm your family.",
+   "steps": [
+    "Spray only when no rain is expected for 6 hours.",
+    "Spray in the calm early morning.",
+    "Check the Weather screen for a “Go” on spraying."
+   ],
+   "followUp": null,
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_cassava_cuttings",
+   "keywords": [
+    "cutting",
+    "cuttings",
+    "cassava"
+   ],
+   "cropId": "cassava",
+   "conditionId": null,
+   "headline": "Plant only clean cassava cuttings",
+   "urgency": "plan",
+   "confidence": 0.72,
+   "whatsHappening": "Cassava diseases travel inside cuttings from sick plants.",
+   "whyItMatters": "Clean cuttings are the cheapest way to protect your next harvest.",
+   "steps": [
+    "Take cuttings only from healthy plants without mosaic or brown spots.",
+    "Use a resistant variety — ask your farmer promoter where to find it.",
+    "Cut pieces about 25 cm long with 5–7 buds."
+   ],
+   "followUp": null,
+   "sources": [
+    "IITA cassava disease guidance",
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_storage",
+   "keywords": [
+    "store",
+    "storage",
+    "dry",
+    "drying",
+    "harvest",
+    "aflatoxin",
+    "bags"
+   ],
+   "cropId": null,
+   "conditionId": null,
+   "headline": "Dry grain well, then store it airtight",
+   "urgency": "plan",
+   "confidence": 0.74,
+   "whatsHappening": "Damp grain grows mould and attracts weevils.",
+   "whyItMatters": "Mould makes grain unsafe to eat and lowers the price.",
+   "steps": [
+    "Dry until a grain cracks when you bite it.",
+    "Store in airtight (hermetic) bags, off the floor.",
+    "Check prices before selling — they often rise a few months after harvest."
+   ],
+   "followUp": null,
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_bean_spots",
+   "keywords": [
+    "bean",
+    "beans",
+    "spots",
+    "spot"
+   ],
+   "cropId": "beans",
+   "conditionId": "beans_angular_leaf_spot",
+   "headline": "Spots on bean leaves have a few causes",
+   "urgency": "watch",
+   "confidence": 0.5,
+   "whatsHappening": "Brown spots can be angular leaf spot, rust or anthracnose.",
+   "whyItMatters": "Each needs different care, so it’s worth checking closely.",
+   "steps": [
+    "Look under the leaves: rusty powder means rust.",
+    "Spots that stop at the veins suggest angular leaf spot.",
+    "Take a photo check so Inama can tell them apart."
+   ],
+   "followUp": "Add a photo so Inama can tell them apart.",
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_banana_wilt",
+   "keywords": [
+    "banana",
+    "wilt",
+    "wilting",
+    "yellow"
+   ],
+   "cropId": "banana",
+   "conditionId": "banana_xanthomonas_wilt",
+   "headline": "Wilting bananas need action today",
+   "urgency": "today",
+   "confidence": 0.6,
+   "whatsHappening": "Yellow, wilting leaves can mean banana wilt, which spreads on tools.",
+   "whyItMatters": "One sick plant can infect a whole plantation.",
+   "steps": [
+    "Cut down the sick plant and bury it on the spot.",
+    "Clean tools in fire or household bleach after each plant.",
+    "Remove male buds with a forked stick."
+   ],
+   "followUp": "Add a photo so Inama can be surer.",
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  },
+  {
+   "id": "q_soil_acid",
+   "keywords": [
+    "soil",
+    "acid",
+    "acidic",
+    "lime",
+    "ph"
+   ],
+   "cropId": null,
+   "conditionId": null,
+   "headline": "Acidic soil needs lime before planting",
+   "urgency": "plan",
+   "confidence": 0.7,
+   "whatsHappening": "Many hillside soils in Rwanda are acidic, which locks up nutrients.",
+   "whyItMatters": "Fertilizer works poorly in acidic soil.",
+   "steps": [
+    "Ask your farmer promoter for a soil test.",
+    "Spread lime (ishwagara) about two months before planting.",
+    "Add compost or manure every season."
+   ],
+   "followUp": null,
+   "sources": [
+    "Rwanda Agriculture Board (RAB) crop protection guidance"
+   ]
+  }
+ ],
+ "defaultAnswer": {
+  "headline": "Here is what Inama suggests",
+  "whatsHappening": "Inama needs a little more detail to be sure.",
+  "whyItMatters": "Advice is best when it fits your crop, field and season.",
+  "steps": [
+   "Tell Inama which crop and field this is about.",
+   "If plants look sick, take a photo check.",
+   "For anything urgent, call your farmer promoter."
+  ],
+  "followUp": "Add a photo or say which crop this is about.",
+  "confidence": 0.35,
+  "urgency": "watch",
+  "sources": []
+ }
+}

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  English (default) strings for Inama.
+  Every user-facing word in the app lives here or in the shared content files
+  (shared/knowledge/advisory_kb.<lang>.json, shared/content/lessons.<lang>.json).
+  To add Kinyarwanda or French: copy this file to res/values-rw/ or res/values-fr/ and translate
+  the values — keys and %1$s placeholders stay the same. See docs/ARCHITECTURE.md › Languages.
+-->
+<resources>
+    <string name="app_name" translatable="false">Inama</string>
+
+    <!-- ============================================================== common -->
+    <string name="action_add_field">Add a field</string>
+    <string name="action_all_tasks">All tasks</string>
+    <string name="action_back">Back</string>
+    <string name="action_back_home">Back to home</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_get_started">Get started</string>
+    <string name="action_listen">Listen</string>
+    <string name="action_next">Next</string>
+    <string name="action_ok">OK</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_save">Save</string>
+    <string name="action_see_all">See all</string>
+    <string name="action_see_tasks">See tasks</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_try_again">Try again</string>
+    <string name="loading">Loading…</string>
+    <string name="saving">Saving…</string>
+    <string name="or">or</string>
+    <string name="step_of">Step %1$d of %2$d</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="offline_banner">You’re offline. Inama still works — answers come from the guide on your phone.</string>
+    <string name="error_network">Couldn’t connect. Check your signal and try again.</string>
+    <string name="advice_disclaimer">Inama gives advice, not a guarantee. For big losses, talk to your farmer promoter or sector agronomist.</string>
+    <string name="area_ares">%1$d ares</string>
+    <string name="day_today">Today</string>
+    <string name="day_tomorrow">Tomorrow</string>
+    <string name="task_from_inama">From Inama</string>
+
+    <plurals name="weeks_ago">
+        <item quantity="one">%1$d week ago</item>
+        <item quantity="other">%1$d weeks ago</item>
+    </plurals>
+
+    <!-- Accessibility labels -->
+    <string name="cd_ask_by_voice">Ask by voice</string>
+    <string name="cd_history">History</string>
+    <string name="cd_flash_on">Flash is on</string>
+    <string name="cd_flash_off">Flash is off</string>
+    <string name="cd_take_photo">Take photo</string>
+    <string name="cd_your_photo">Your photo</string>
+    <string name="cd_send">Send</string>
+    <string name="cd_less">Less</string>
+    <string name="cd_more">More</string>
+    <string name="cd_earlier">Earlier</string>
+    <string name="cd_later">Later</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_farm">Farm</string>
+    <string name="tab_ask">Ask</string>
+    <string name="tab_tasks">Tasks</string>
+    <string name="tab_me">Me</string>
+
+    <!-- ============================================================== advice labels (codes → words) -->
+    <string name="q_happening">What’s happening</string>
+    <string name="q_why">Why it matters</string>
+    <string name="q_todo">What to do</string>
+
+    <string name="urgency_today">Today</string>
+    <string name="urgency_this_week">This week</string>
+    <string name="urgency_watch">Keep watching</string>
+    <string name="urgency_plan">Plan ahead</string>
+
+    <string name="confidence_label">Confidence: %1$s</string>
+    <string name="confidence_high">High</string>
+    <string name="confidence_medium">Medium</string>
+    <string name="confidence_low">Low</string>
+
+    <string name="reason_signs_matched">%1$d signs you saw match</string>
+    <string name="reason_photo_and_signs">photo and %1$d signs match</string>
+    <string name="reason_photo_only">based on the photo only</string>
+    <string name="reason_ambiguous">two problems look alike</string>
+    <string name="reason_photo_blurry">the photo is blurry</string>
+    <string name="reason_photo_dark">the photo is too dark</string>
+    <string name="reason_photo_bright">the photo is too bright</string>
+    <string name="reason_not_a_plant">no plant found in the photo</string>
+    <string name="reason_no_signs">not enough signs yet</string>
+    <string name="reason_healthy_looking">the leaf looks healthy</string>
+    <string name="reason_kb_match">from the reviewed guide</string>
+    <string name="reason_general">general advice</string>
+
+    <string name="photo_hint_brown">Brown patches seen in the photo</string>
+    <string name="photo_hint_yellow">Yellow areas seen in the photo</string>
+    <string name="photo_hint_white">Pale or white patches seen in the photo</string>
+
+    <string name="status_good">Looking good</string>
+    <string name="status_check">Check soon</string>
+    <string name="status_sick">Needs care</string>
+    <string name="status_not_planted">Not planted</string>
+
+    <string name="engine_remote">Answered by the Inama server · %1$s</string>
+    <string name="engine_on_device">Answered on your phone · reviewed guide v%1$s (works offline)</string>
+
+    <!-- ============================================================== weather -->
+    <string name="weather_title">Weather for farming</string>
+    <string name="weather_sunny">Sunny</string>
+    <string name="weather_partly_cloudy">Partly cloudy</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_storm">Heavy rain</string>
+    <string name="weather_rain_today">Rain today</string>
+    <string name="weather_next_heavy_rain">Heavy rain</string>
+    <string name="weather_none_soon">None soon</string>
+    <string name="weather_wind">Wind</string>
+    <string name="weather_kmh">%1$d km/h</string>
+    <string name="weather_demo">Sample forecast</string>
+    <string name="weather_saved">Saved forecast</string>
+    <string name="loading_weather">Getting the weather…</string>
+    <string name="weather_now_line">%1$s · humidity %2$d%% · wind %3$d km/h</string>
+    <string name="weather_demo_banner">This is a sample forecast (no live weather key on the server). Updated %1$s.</string>
+    <string name="weather_saved_banner">No connection — showing the forecast saved %1$s.</string>
+    <string name="weather_failed_title">No weather right now</string>
+    <string name="weather_failed_body">We couldn’t get a forecast. Check your signal and try again.</string>
+    <string name="weather_good_time">Good time to…</string>
+    <string name="weather_next_days">Next days</string>
+    <string name="weather_rain_chance">%1$d%% chance of rain</string>
+    <string name="weather_rain_mm">About %1$d mm</string>
+    <string name="weather_updated">Updated %1$s</string>
+    <string name="alert_heavy_rain">Heavy rain expected %1$s. Clear drainage channels and don’t spray.</string>
+    <string name="alert_heat">Hot days ahead %1$s. Water seedlings early in the morning.</string>
+    <string name="alert_dry_spell">A dry spell is coming %1$s. Mulch to keep soil moist.</string>
+
+    <string name="activity_spraying">Spraying</string>
+    <string name="activity_weeding">Weeding</string>
+    <string name="activity_planting">Planting</string>
+    <string name="activity_drying">Drying harvest</string>
+    <string name="verdict_go">Good</string>
+    <string name="verdict_careful">Careful</string>
+    <string name="verdict_wait">Wait</string>
+    <string name="decision_spray_rain">Rain is coming — wait to spray, or it will wash off.</string>
+    <string name="decision_spray_wind">Too windy to spray safely today.</string>
+    <string name="decision_spray_go">Good day to spray: dry and calm.</string>
+    <string name="decision_weed_wet">Soil is very wet — weeding now can damage roots.</string>
+    <string name="decision_weed_go">Good day for weeding.</string>
+    <string name="decision_plant_rain">Steady rain is coming — a good time to plant.</string>
+    <string name="decision_plant_dry">Too dry to plant. Wait for steady rain.</string>
+    <string name="decision_plant_mixed">Rain is patchy. Plant only where the soil is moist.</string>
+    <string name="decision_dry_rain">Rain expected — keep your harvest covered.</string>
+    <string name="decision_dry_go">Sunny — a good day to dry your harvest.</string>
+
+    <!-- ============================================================== onboarding -->
+    <string name="splash_eyebrow">Farm advice for Rwanda</string>
+    <string name="splash_title">Advice you can trust, in your pocket</string>
+    <string name="splash_body">Check a sick plant with a photo, ask by voice, and know what to do this week.</string>
+    <string name="splash_cta">Start</string>
+    <string name="splash_footer">Works offline · Made for basic Android phones</string>
+
+    <string name="language_title">Choose your language</string>
+    <string name="language_body">Inama will write and speak in this language.</string>
+    <string name="language_note">More languages are coming. You can change this later in Settings.</string>
+    <string name="language_available">Available</string>
+    <string name="language_coming_soon">Coming soon</string>
+
+    <string name="intro1_eyebrow">Ask by voice</string>
+    <string name="intro1_title">Ask like you’d ask a neighbour</string>
+    <string name="intro1_body">Speak your question. Inama answers in simple words and can read the answer aloud.</string>
+    <string name="intro1_sample_q">My maize leaves have holes. What should I do?</string>
+    <string name="intro1_sample_a">Check the leaf funnel for fall armyworm this week.</string>
+    <string name="intro1_playing">Playing answer</string>
+    <string name="intro2_eyebrow">Photo check</string>
+    <string name="intro2_title">Take a photo of a sick plant</string>
+    <string name="intro2_body">Inama looks for signs of pests and disease, says how sure it is, and what to do next.</string>
+    <string name="crop_cassava_short">Cassava</string>
+    <string name="intro2_sample">Brown streak — likely</string>
+    <string name="intro3_eyebrow">Plan your week</string>
+    <string name="intro3_title">Know what to do, and when</string>
+    <string name="intro3_body">Weather-aware tips for each field: when to spray, weed, plant or dry your harvest.</string>
+    <string name="intro3_sample_day">Thursday</string>
+    <string name="intro3_sample_title">Top-dress maize after the rain</string>
+    <string name="intro3_sample_body">The soil is moist — fertilizer works best now.</string>
+
+    <string name="privacy_header">Your data</string>
+    <string name="privacy_title">Your farm data belongs to you</string>
+    <string name="privacy_body">Here is what Inama keeps and why. You can change these choices any time in Settings.</string>
+    <string name="privacy_keep">What we keep</string>
+    <string name="privacy_keep_body">Your name, phone number, fields, and the photos you choose to check.</string>
+    <string name="privacy_why">Why</string>
+    <string name="privacy_why_body">To give advice for your crops and remember what you did.</string>
+    <string name="privacy_where">Where</string>
+    <string name="privacy_where_body">On your phone first. A photo goes to the Inama server only when you ask for a check.</string>
+    <string name="privacy_who">Who can see it</string>
+    <string name="privacy_who_body">Only you — and your farmer promoter, if you allow it below.</string>
+    <string name="consent_share">Help improve the advice</string>
+    <string name="consent_share_body">Share checks without your name so agronomists can make Inama better.</string>
+    <string name="consent_promoter">Let my farmer promoter see my fields</string>
+    <string name="consent_promoter_body">So they can help when Inama is not sure.</string>
+    <string name="privacy_agree">I agree, continue</string>
+
+    <string name="phone_title">What’s your phone number?</string>
+    <string name="phone_body">We’ll send you a code by SMS. No password needed.</string>
+    <string name="phone_label">Phone number</string>
+    <string name="phone_error">Enter a Rwandan mobile number, for example 788 123 456.</string>
+    <string name="phone_send">Send code</string>
+    <string name="phone_sending">Sending…</string>
+    <string name="phone_ussd_title">No smartphone?</string>
+    <string name="phone_ussd_body">Advice by USSD and SMS for basic phones is planned for a later version.</string>
+    <string name="phone_promoter_title">Need help?</string>
+    <string name="phone_promoter_body">Your farmer promoter can set up Inama with you.</string>
+
+    <string name="verify_title">Enter the code</string>
+    <string name="verify_body">We sent a 6-digit code to %1$s.</string>
+    <string name="verify_label">6-digit code</string>
+    <string name="verify_expired">That code has expired. Ask for a new one.</string>
+    <string name="verify_wrong">That code is not right. Please try again.</string>
+    <string name="verify_demo_code">Demo mode: your code is %1$s</string>
+    <string name="verify_use_code">Use it</string>
+    <string name="verify_checking">Checking…</string>
+    <string name="verify_cta">Confirm</string>
+    <string name="verify_resend_in">You can ask for a new code in %1$d s</string>
+    <string name="verify_resend">Send a new code</string>
+
+    <string name="profile_title">About you</string>
+    <string name="profile_edit_title">Edit profile</string>
+    <string name="profile_name">Your name</string>
+    <string name="profile_where">Where do you farm?</string>
+    <string name="profile_choose_district">Choose your district</string>
+    <string name="profile_province">Province: %1$s</string>
+    <string name="profile_district_hint">Used for local weather and advice</string>
+    <string name="profile_sector">Sector (optional)</string>
+    <string name="profile_keeps">What do you keep?</string>
+    <string name="profile_crops">Crops</string>
+    <string name="profile_animals">Animals</string>
+
+    <string name="done_title">Your farm is ready, %1$s!</string>
+    <string name="done_body">Inama will give advice for these fields, season by season.</string>
+    <string name="done_field_line">%1$s · %2$d ares</string>
+    <string name="done_briefing">Each morning, open Inama for a short briefing on the weather and your fields.</string>
+    <string name="done_cta">Go to my farm</string>
+
+    <!-- ============================================================== home -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="home_location_unknown">Your area</string>
+    <string name="home_season">Season %1$s · week %2$d</string>
+    <string name="home_priority">Today’s priority</string>
+    <string name="home_my_fields">My fields</string>
+    <string name="home_check_plant">Check a sick plant</string>
+    <string name="home_ask">Ask Inama</string>
+    <string name="home_learn">Learn</string>
+    <string name="home_history">My history</string>
+    <string name="home_this_week">This week</string>
+    <string name="home_no_tasks">No tasks for now. Advice you save shows up here.</string>
+    <string name="home_recent_checks">Recent checks</string>
+    <string name="priority_weather_title">Don’t spray this week</string>
+    <string name="priority_weather_body">Heavy rain is coming. Spray now and it will wash off — wait for two dry days.</string>
+    <string name="priority_all_good_title">All looks good today</string>
+    <string name="priority_all_good_body">Walk your fields and look at a few plants. If something looks wrong, take a photo.</string>
+    <string name="priority_no_fields_title">Add your first field</string>
+    <string name="priority_no_fields_body">Inama gives advice for each crop and growth stage. Add a field to start.</string>
+    <string name="priority_cta_open">Open the advice</string>
+    <string name="priority_cta_weather">See the weather</string>
+    <string name="priority_cta_check">Check a plant</string>
+
+    <!-- ============================================================== farm & fields -->
+    <string name="farm_title">My farm</string>
+    <string name="farm_summary">%1$d fields · %2$d ares</string>
+    <string name="farm_count_good">%1$d looking good</string>
+    <string name="farm_count_check">%1$d to check</string>
+    <string name="farm_count_sick">%1$d need care</string>
+    <string name="farm_empty_title">No fields yet</string>
+    <string name="farm_empty_body">Add the fields you farm so Inama can give advice for each crop.</string>
+
+    <string name="field_title">Field</string>
+    <string name="field_subtitle_not_planted">%1$s · %2$d ares · not planted</string>
+    <string name="field_subtitle_days">%1$s · day %2$d · %3$d ares</string>
+    <string name="field_subtitle_weeks">%1$s · week %2$d · %3$d ares</string>
+    <string name="field_subtitle_months">%1$s · month %2$d · %3$d ares</string>
+    <string name="field_missing_title">Field not found</string>
+    <string name="field_missing_body">It may have been deleted.</string>
+    <string name="field_day_of">Day %1$d of about %2$d</string>
+    <string name="field_harvest_in">About %1$d days to harvest</string>
+    <string name="field_harvest_now">Harvest time — check your crop.</string>
+    <string name="field_planted_on">Planted %1$s</string>
+    <string name="field_not_planted_title">Not planted yet</string>
+    <string name="field_not_planted_body">Add the planting date to get advice for each growth stage.</string>
+    <string name="field_add_planting_date">Add planting date</string>
+    <string name="field_check_plant">Check a sick plant in this field</string>
+    <string name="field_this_stage">Advice for this stage</string>
+    <string name="field_tasks">Tasks for this field</string>
+    <string name="field_no_tasks">No open tasks for this field.</string>
+    <string name="field_recent_checks">Recent checks</string>
+    <string name="field_delete_title">Delete “%1$s”?</string>
+    <string name="field_delete_body">The field is removed from your farm. Past checks stay in your history.</string>
+
+    <string name="land_hillside">Hillside</string>
+    <string name="land_flat">Flat</string>
+    <string name="land_valley">Valley / marshland</string>
+
+    <string name="editor_title_new">Add a field</string>
+    <string name="editor_title_edit">Edit field</string>
+    <string name="editor_first_run_body">Start with one field. You can add more later.</string>
+    <string name="editor_name">Field name</string>
+    <string name="editor_name_hint">For example: Hill field, Near the house</string>
+    <string name="editor_name_error">Give the field a name you will recognise.</string>
+    <string name="editor_crop">What grows here?</string>
+    <string name="editor_crop_error">Choose a crop.</string>
+    <string name="editor_size">How big is it?</string>
+    <string name="editor_size_m2">About %1$d m²</string>
+    <string name="editor_size_hint">1 are is 10 × 10 metres. Your best guess is fine.</string>
+    <string name="editor_land">Type of land</string>
+    <string name="editor_planted">Planted already?</string>
+    <string name="editor_not_yet">Not yet</string>
+    <string name="editor_already_planted">Yes, planted</string>
+    <string name="editor_this_week">This week</string>
+    <string name="editor_save">Save field</string>
+    <string name="editor_skip">Skip for now</string>
+
+    <!-- ============================================================== photo check -->
+    <string name="scan_title">Check a sick plant</string>
+    <string name="scan_for_field">For %1$s</string>
+    <string name="scan_tip">One sick leaf, in the shade, filling the frame</string>
+    <string name="scan_guide">Put the sick part inside the frame</string>
+    <string name="scan_gallery">Gallery</string>
+    <string name="scan_samples">Samples</string>
+    <string name="scan_preparing">Getting your photo ready…</string>
+    <string name="scan_error_camera">The camera could not take the photo. Try again, or choose one from the gallery.</string>
+    <string name="scan_error_open">That photo could not be opened. Try another one.</string>
+    <string name="scan_permission_title">Inama needs your camera</string>
+    <string name="scan_permission_body">To look at your plant. The photo stays on your phone until you ask for a check.</string>
+    <string name="scan_permission_allow">Allow camera</string>
+    <string name="scan_use_gallery">Choose a photo from the gallery</string>
+    <string name="scan_use_sample">Try a sample photo</string>
+    <string name="samples_title">Sample photos</string>
+    <string name="samples_body">Try the photo check without going to the field.</string>
+    <string name="sample_cassava_spots">Cassava leaf with spots</string>
+    <string name="sample_cassava_spots_body">Shows how Inama handles a sick leaf.</string>
+    <string name="sample_cassava_healthy">Healthy cassava leaf</string>
+    <string name="sample_cassava_healthy_body">Shows a calm, healthy result.</string>
+    <string name="sample_beans_blurry">Blurry bean leaf</string>
+    <string name="sample_beans_blurry_body">Shows how Inama asks for a better photo.</string>
+
+    <string name="review_title">Check your photo</string>
+    <string name="review_subtitle">A few details make the check more accurate</string>
+    <string name="review_photo_size">%1$d KB · kept on your phone</string>
+    <string name="review_clear">Clear photo</string>
+    <string name="review_photo_ok">Clear photo with good light.</string>
+    <string name="review_retake">Take the photo again</string>
+    <string name="review_use_anyway">Use this photo anyway</string>
+    <string name="review_which_crop">Which crop is it?</string>
+    <string name="review_which_field">Which field?</string>
+    <string name="review_no_field">Not for a field</string>
+    <string name="review_signs">Did you see any of these? (optional)</string>
+    <string name="review_signs_body">Tick what you saw on the plant. It helps Inama tell similar problems apart.</string>
+    <string name="review_choose_crop_first">Choose the crop first.</string>
+    <string name="review_cta">Check my plant</string>
+
+    <string name="analysing_title">Looking at your plant…</string>
+    <string name="stage_received">Photo received</string>
+    <string name="stage_checking_photo">Checking the photo is clear</string>
+    <string name="stage_looking">Looking for signs of pests and disease</string>
+    <string name="stage_matching">Matching with the reviewed guide</string>
+    <string name="analysing_note">Usually under 10 seconds. Works without internet too.</string>
+    <string name="analysing_failed_title">We couldn’t check this photo</string>
+    <string name="analysing_failed_body">Something went wrong. Your photo is saved — please try again.</string>
+    <string name="analysing_failed_image">Inama can’t read this file. Please use a normal photo (JPG or PNG).</string>
+    <string name="analysing_other_photo">Use another photo</string>
+
+    <!-- ============================================================== diagnosis -->
+    <string name="diagnosis_title">Result</string>
+    <string name="diagnosis_missing_title">Result not found</string>
+    <string name="diagnosis_missing_body">This check is no longer on your phone.</string>
+    <string name="diagnosis_eyebrow_condition">Most likely</string>
+    <string name="diagnosis_eyebrow_uncertain">Not sure yet</string>
+    <string name="diagnosis_eyebrow_healthy">Good news</string>
+    <string name="diagnosis_retake">Take a new photo</string>
+    <string name="diagnosis_add_tasks">Add these steps to my tasks</string>
+    <string name="diagnosis_tasks_added">%1$d steps added to your tasks.</string>
+    <string name="diagnosis_tasks_already">These steps are in your tasks.</string>
+    <string name="diagnosis_less_likely">Less likely</string>
+    <string name="diagnosis_person_title">Want a person to check?</string>
+    <string name="diagnosis_person_body">Send this to your farmer promoter.</string>
+    <string name="diagnosis_escalate">Ask a farmer promoter to check</string>
+    <string name="diagnosis_sending">Sending…</string>
+    <string name="diagnosis_escalate_failed">Couldn’t send it. Check your signal and try again.</string>
+    <string name="diagnosis_not_sure_title">Inama is not sure what this is</string>
+    <string name="diagnosis_not_sure_body">Don’t buy or spray medicine on a guess. A person should look first — until then, the safe steps below protect your crop.</string>
+    <string name="diagnosis_might_be">It could be one of these:</string>
+    <string name="diagnosis_another_photo">Take another photo</string>
+    <string name="diagnosis_safe_now">Safe to do now</string>
+    <string name="diagnosis_healthy_note">No signs of pests or disease were found on this leaf.</string>
+    <string name="diagnosis_check_another">Check another plant</string>
+    <string name="diagnosis_why_title">Why Inama thinks this</string>
+    <string name="diagnosis_look_for">To be sure, look for: %1$s</string>
+    <string name="diagnosis_signs_title">Other signs of this problem</string>
+    <string name="diagnosis_case_sent">Sent to a person</string>
+    <string name="diagnosis_case_view">See the reply</string>
+
+    <string name="feedback_title">Was this advice right?</string>
+    <string name="feedback_yes">Yes</string>
+    <string name="feedback_no">No</string>
+    <string name="feedback_unsure">Not sure</string>
+    <string name="feedback_thanks">Thank you — this helps agronomists improve Inama.</string>
+
+    <string name="case_title">Sent to a person</string>
+    <string name="case_expected">Usually replies within %1$d hours</string>
+    <string name="case_step_sent">Sent</string>
+    <string name="case_step_seen">Seen</string>
+    <string name="case_step_answered">Answered</string>
+    <string name="case_reply_from">Reply from %1$s</string>
+    <string name="case_waiting">We’ll show the reply here as soon as it arrives.</string>
+    <string name="case_demo_note">Demo mode: without a server, a sample reply arrives after about a minute and a half.</string>
+    <string name="case_your_check">Your check</string>
+    <string name="case_missing_title">Case not found</string>
+    <string name="case_missing_body">This request is no longer on your phone.</string>
+
+    <!-- ============================================================== ask -->
+    <string name="ask_title">Ask Inama</string>
+    <string name="ask_subtitle">By voice or text</string>
+    <string name="ask_new_question">New question</string>
+    <string name="ask_about_crop">About which crop?</string>
+    <string name="ask_any_crop">Any crop</string>
+    <string name="ask_tap_to_speak">Tap and ask your question</string>
+    <string name="ask_language_note">Inama answers in English for now. Kinyarwanda is coming next.</string>
+    <string name="ask_try">Try asking</string>
+    <string name="ask_suggest_1">When should I top-dress my maize?</string>
+    <string name="ask_suggest_2">My bean leaves are turning yellow. Why?</string>
+    <string name="ask_suggest_3">How do I check for fall armyworm?</string>
+    <string name="ask_suggest_4">How can I keep my harvest safe in storage?</string>
+    <string name="ask_recent">Recent questions</string>
+    <string name="ask_thinking">Inama is thinking…</string>
+    <string name="ask_failed">We couldn’t get an answer. Please try again.</string>
+    <string name="ask_check_with_photo">Check with a photo</string>
+    <string name="ask_placeholder">Type your question</string>
+    <string name="ask_listening">Listening…</string>
+    <string name="ask_listening_hint">Speak now</string>
+    <string name="ask_done_speaking">Done</string>
+    <string name="voice_not_available">Voice questions aren’t available on this phone. Please type your question.</string>
+    <string name="voice_no_match">Sorry, we didn’t catch that. Try again, or type your question.</string>
+    <string name="voice_no_permission">Inama needs the microphone to hear your question.</string>
+    <string name="voice_network">Voice needs internet on this phone. Please type your question.</string>
+    <string name="voice_other">Something went wrong with the microphone. Please try again.</string>
+
+    <string name="answer_title">Answer</string>
+    <string name="answer_missing_title">Answer not found</string>
+    <string name="answer_missing_body">This answer is no longer on your phone.</string>
+
+    <!-- ============================================================== tasks -->
+    <string name="tasks_title">Tasks</string>
+    <string name="tasks_subtitle">%1$d to do</string>
+    <string name="tasks_todo">To do</string>
+    <string name="tasks_done">Done</string>
+    <string name="tasks_add_hint">Add your own task</string>
+    <string name="tasks_add">Add task</string>
+    <string name="tasks_any_field">Any field</string>
+    <string name="tasks_empty_title">Nothing to do right now</string>
+    <string name="tasks_empty_body">When Inama gives you advice, tap “Add these steps to my tasks” to keep track here.</string>
+    <string name="tasks_done_empty_title">No finished tasks yet</string>
+    <string name="tasks_done_empty_body">Tick a task when you have done it.</string>
+
+    <!-- ============================================================== learn -->
+    <string name="learn_title">Learn</string>
+    <string name="learn_subtitle">Short lessons you can listen to</string>
+    <string name="learn_all">All</string>
+    <string name="learn_minutes">%1$d min</string>
+    <string name="learn_failed_title">Lessons didn’t load</string>
+    <string name="learn_failed_body">Please try again.</string>
+    <string name="learn_empty_title">No lessons yet</string>
+    <string name="learn_empty_body">New lessons will appear here.</string>
+    <string name="lesson_missing_title">Lesson not found</string>
+    <string name="lesson_missing_body">This lesson is not available.</string>
+    <string name="lesson_reviewed_note">Content marked as draft until reviewed by an agronomist.</string>
+    <string name="lesson_ask">Ask a question about this</string>
+
+    <!-- ============================================================== history -->
+    <string name="history_title">My history</string>
+    <string name="history_subtitle">Photo checks and questions, saved on your phone</string>
+    <string name="history_all">All</string>
+    <string name="history_checks">Photo checks</string>
+    <string name="history_questions">Questions</string>
+    <string name="history_empty_title">Nothing here yet</string>
+    <string name="history_empty_body">Your photo checks and questions will be saved here.</string>
+    <string name="history_sent_to_person">Sent to a person</string>
+    <string name="history_you_asked">You asked · %1$s</string>
+
+    <!-- ============================================================== me, settings, help -->
+    <string name="me_no_name">Farmer</string>
+    <string name="me_stat_fields">Fields</string>
+    <string name="me_stat_area">Area</string>
+    <string name="me_stat_checks">Checks</string>
+    <string name="me_stat_done">Tasks done</string>
+    <string name="me_local_session">Signed in on this phone only (the server was not reachable). Your data stays on this phone.</string>
+    <string name="me_menu_farm">My farm</string>
+    <string name="me_menu_history">My history</string>
+    <string name="me_menu_profile">Edit profile</string>
+    <string name="me_menu_settings">Settings</string>
+    <string name="me_menu_help">Help and contact</string>
+    <string name="me_version">Inama %1$s · MVP</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_note">Kinyarwanda and French are planned for the next version.</string>
+    <string name="settings_listening">Listening</string>
+    <string name="settings_read_aloud">Show “Listen” buttons</string>
+    <string name="settings_read_aloud_body">Inama can read advice aloud.</string>
+    <string name="settings_speech_speed">Speaking speed</string>
+    <string name="speed_slow">Slow</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_fast">Fast</string>
+    <string name="settings_display">Display</string>
+    <string name="settings_text_size">Text size</string>
+    <string name="text_normal">Normal</string>
+    <string name="text_large">Large</string>
+    <string name="text_extra_large">Extra large</string>
+    <string name="settings_high_contrast">High contrast</string>
+    <string name="settings_high_contrast_body">Stronger colours for bright sunlight.</string>
+    <string name="settings_data">Data and AI</string>
+    <string name="settings_low_data">Save mobile data</string>
+    <string name="settings_low_data_body">Sends smaller photos (about 150 KB).</string>
+    <string name="settings_ai_mode">How Inama answers</string>
+    <string name="ai_auto">Server + offline</string>
+    <string name="ai_on_device">Phone only</string>
+    <string name="ai_auto_body">Uses the Inama server’s AI when online, and the reviewed guide on your phone when offline.</string>
+    <string name="ai_on_device_body">Always answers from the reviewed guide on your phone. No photos leave the phone.</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_sms">SMS copies</string>
+    <string name="settings_sms_body">Get urgent advice and replies by SMS too.</string>
+    <string name="settings_server">Server (for testing)</string>
+    <string name="settings_server_body">The Inama server the app talks to. Change it to test against your own server.</string>
+    <string name="settings_server_url">Server address</string>
+    <string name="settings_server_test">Test</string>
+    <string name="settings_server_checking">Checking…</string>
+    <string name="settings_server_ok">Connected. AI: %1$s · weather: %2$s</string>
+    <string name="settings_weather_live">live</string>
+    <string name="settings_weather_demo">sample</string>
+    <string name="settings_server_fail">Couldn’t reach this server. Inama will answer from the phone.</string>
+    <string name="settings_server_reset">Use the default server</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_sign_out">Sign out</string>
+    <string name="settings_sign_out_confirm_title">Sign out?</string>
+    <string name="settings_sign_out_confirm_body">Your fields and history stay on this phone. You’ll need your phone number to sign in again.</string>
+    <string name="settings_reset">Reset all data</string>
+    <string name="settings_reset_body">Deletes everything Inama saved on this phone and starts again (useful for demos).</string>
+    <string name="settings_reset_confirm_title">Delete everything?</string>
+    <string name="settings_reset_confirm_body">Your fields, photos, history and tasks will be removed from this phone. This cannot be undone.</string>
+    <string name="settings_reset_confirm">Delete everything</string>
+
+    <string name="help_title">Help and contact</string>
+    <string name="help_call_title">Talk to a person</string>
+    <string name="help_call_body">Call the farmer helpline on %1$s.</string>
+    <string name="help_call_cta">Call %1$s</string>
+    <string name="help_faq">Questions farmers ask</string>
+    <string name="faq_offline_q">Does Inama work without internet?</string>
+    <string name="faq_offline_a">Yes. Photo checks, questions, lessons and tasks work offline using the reviewed guide on your phone. With internet, answers can use the Inama server’s AI and live weather.</string>
+    <string name="faq_sure_q">How sure is Inama?</string>
+    <string name="faq_sure_a">Every answer shows High, Medium or Low confidence and why. When Inama is not sure, it gives only safe steps and suggests asking a person.</string>
+    <string name="faq_photo_q">How do I take a good photo?</string>
+    <string name="faq_photo_a">Pick one sick leaf, stand in the shade, hold the phone steady, and fill the frame with the sick part.</string>
+    <string name="faq_data_q">Who sees my data?</string>
+    <string name="faq_data_a">Only you, unless you allow your farmer promoter to see your fields. You can change this in Settings › Privacy.</string>
+    <string name="faq_language_q">When will Inama speak Kinyarwanda?</string>
+    <string name="faq_language_a">Kinyarwanda is planned for the next version. The app is already built so the language can be switched on without changing how it works.</string>
+    <string name="faq_person_q">Can a person check my plant?</string>
+    <string name="faq_person_a">Yes. On any result, tap “Ask a farmer promoter to check” and they will reply in the app.</string>
+    <string name="help_about">Inama MVP. Advice content is a draft and must be reviewed by agronomists before field use.</string>
+</resources>

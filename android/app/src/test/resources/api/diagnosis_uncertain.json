@@ -1,0 +1,75 @@
+{
+ "success": true,
+ "data": {
+  "id": "dg_21992297350057ad",
+  "createdAt": "2026-09-30T11:11:06.283Z",
+  "language": "en",
+  "crop": {
+   "id": "beans",
+   "name": "Beans"
+  },
+  "fieldId": null,
+  "confidence": {
+   "level": "low",
+   "score": 0,
+   "reasonCode": "photo_blurry",
+   "count": 0,
+   "reason": "the photo is blurry"
+  },
+  "photoProblem": {
+   "code": "blurry",
+   "title": "We couldn’t see the leaf clearly",
+   "body": "The photo is too blurry to check. Nothing is lost — take one more.",
+   "tips": [
+    "Hold the phone a hand-width from one leaf.",
+    "Stand with the sun behind you, not in front.",
+    "Keep still for 2 seconds while the photo is taken."
+   ]
+  },
+  "engine": {
+   "id": "inama-kb",
+   "version": "1.0.0",
+   "mode": "remote",
+   "model": null
+  },
+  "outcome": "uncertain",
+  "condition": null,
+  "headline": "Inama is not sure what this is",
+  "urgency": "watch",
+  "whatsHappening": "The photo is too blurry to check. Nothing is lost — take one more.",
+  "whyItMatters": "Different problems need different care. A wrong spray costs money and doesn’t help.",
+  "steps": [
+   "Don’t spray yet.",
+   "Take a sharp photo of one sick leaf, close up, in daylight.",
+   "Send it to your farmer promoter or an agronomist to check."
+  ],
+  "evidence": {
+   "matched": [],
+   "lookFor": null
+  },
+  "candidates": [
+   {
+    "id": "beans_angular_leaf_spot",
+    "name": "Angular leaf spot"
+   },
+   {
+    "id": "beans_rust",
+    "name": "Bean rust"
+   }
+  ],
+  "lessLikely": [],
+  "sources": [],
+  "escalation": {
+   "recommended": true,
+   "reasonCode": "low_confidence",
+   "reason": "Inama is not sure — a person should check."
+  },
+  "image": {
+   "bytes": 6801,
+   "mimeType": "image/jpeg"
+  },
+  "symptoms": [
+   "brown_spots"
+  ]
+ }
+}

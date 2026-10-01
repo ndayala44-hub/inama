@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose draws everything; this theme only sets the window before the first frame. -->
+    <style name="Theme.Inama" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/inama_forest_deep</item>
+        <item name="android:colorAccent">@color/inama_forest</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

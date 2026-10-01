@@ -1,0 +1,217 @@
+{
+ "schemaVersion": 1,
+ "country": "RW",
+ "note": "District centre coordinates are approximate and only used to fetch local weather.",
+ "districts": [
+  {
+   "id": "gasabo",
+   "province": "Kigali",
+   "name": "Gasabo",
+   "lat": -1.906,
+   "lon": 30.125
+  },
+  {
+   "id": "kicukiro",
+   "province": "Kigali",
+   "name": "Kicukiro",
+   "lat": -1.983,
+   "lon": 30.105
+  },
+  {
+   "id": "nyarugenge",
+   "province": "Kigali",
+   "name": "Nyarugenge",
+   "lat": -1.955,
+   "lon": 30.06
+  },
+  {
+   "id": "bugesera",
+   "province": "Eastern",
+   "name": "Bugesera",
+   "lat": -2.155,
+   "lon": 30.097
+  },
+  {
+   "id": "gatsibo",
+   "province": "Eastern",
+   "name": "Gatsibo",
+   "lat": -1.584,
+   "lon": 30.426
+  },
+  {
+   "id": "kayonza",
+   "province": "Eastern",
+   "name": "Kayonza",
+   "lat": -1.901,
+   "lon": 30.508
+  },
+  {
+   "id": "kirehe",
+   "province": "Eastern",
+   "name": "Kirehe",
+   "lat": -2.266,
+   "lon": 30.646
+  },
+  {
+   "id": "ngoma",
+   "province": "Eastern",
+   "name": "Ngoma",
+   "lat": -2.157,
+   "lon": 30.524
+  },
+  {
+   "id": "nyagatare",
+   "province": "Eastern",
+   "name": "Nyagatare",
+   "lat": -1.298,
+   "lon": 30.326
+  },
+  {
+   "id": "rwamagana",
+   "province": "Eastern",
+   "name": "Rwamagana",
+   "lat": -1.949,
+   "lon": 30.435
+  },
+  {
+   "id": "burera",
+   "province": "Northern",
+   "name": "Burera",
+   "lat": -1.475,
+   "lon": 29.839
+  },
+  {
+   "id": "gakenke",
+   "province": "Northern",
+   "name": "Gakenke",
+   "lat": -1.694,
+   "lon": 29.785
+  },
+  {
+   "id": "gicumbi",
+   "province": "Northern",
+   "name": "Gicumbi",
+   "lat": -1.576,
+   "lon": 30.068
+  },
+  {
+   "id": "musanze",
+   "province": "Northern",
+   "name": "Musanze",
+   "lat": -1.5,
+   "lon": 29.634
+  },
+  {
+   "id": "rulindo",
+   "province": "Northern",
+   "name": "Rulindo",
+   "lat": -1.727,
+   "lon": 29.99
+  },
+  {
+   "id": "gisagara",
+   "province": "Southern",
+   "name": "Gisagara",
+   "lat": -2.603,
+   "lon": 29.842
+  },
+  {
+   "id": "huye",
+   "province": "Southern",
+   "name": "Huye",
+   "lat": -2.597,
+   "lon": 29.739
+  },
+  {
+   "id": "kamonyi",
+   "province": "Southern",
+   "name": "Kamonyi",
+   "lat": -2.004,
+   "lon": 29.901
+  },
+  {
+   "id": "muhanga",
+   "province": "Southern",
+   "name": "Muhanga",
+   "lat": -2.084,
+   "lon": 29.756
+  },
+  {
+   "id": "nyamagabe",
+   "province": "Southern",
+   "name": "Nyamagabe",
+   "lat": -2.47,
+   "lon": 29.497
+  },
+  {
+   "id": "nyanza",
+   "province": "Southern",
+   "name": "Nyanza",
+   "lat": -2.352,
+   "lon": 29.751
+  },
+  {
+   "id": "nyaruguru",
+   "province": "Southern",
+   "name": "Nyaruguru",
+   "lat": -2.696,
+   "lon": 29.55
+  },
+  {
+   "id": "ruhango",
+   "province": "Southern",
+   "name": "Ruhango",
+   "lat": -2.23,
+   "lon": 29.782
+  },
+  {
+   "id": "karongi",
+   "province": "Western",
+   "name": "Karongi",
+   "lat": -2.066,
+   "lon": 29.35
+  },
+  {
+   "id": "ngororero",
+   "province": "Western",
+   "name": "Ngororero",
+   "lat": -1.873,
+   "lon": 29.625
+  },
+  {
+   "id": "nyabihu",
+   "province": "Western",
+   "name": "Nyabihu",
+   "lat": -1.651,
+   "lon": 29.506
+  },
+  {
+   "id": "nyamasheke",
+   "province": "Western",
+   "name": "Nyamasheke",
+   "lat": -2.334,
+   "lon": 29.102
+  },
+  {
+   "id": "rubavu",
+   "province": "Western",
+   "name": "Rubavu",
+   "lat": -1.68,
+   "lon": 29.26
+  },
+  {
+   "id": "rusizi",
+   "province": "Western",
+   "name": "Rusizi",
+   "lat": -2.484,
+   "lon": 28.907
+  },
+  {
+   "id": "rutsiro",
+   "province": "Western",
+   "name": "Rutsiro",
+   "lat": -1.932,
+   "lon": 29.33
+  }
+ ]
+}

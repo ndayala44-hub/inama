@@ -1,0 +1,36 @@
+{
+ "success": true,
+ "data": {
+  "id": "an_b976a7a2bfb07e0e",
+  "createdAt": "2026-09-30T11:11:07.393Z",
+  "language": "en",
+  "question": "My maize has small holes in the leaves",
+  "engine": {
+   "id": "inama-kb",
+   "version": "1.0.0",
+   "mode": "remote",
+   "model": null
+  },
+  "headline": "This sounds like fall armyworm",
+  "confidence": {
+   "level": "medium",
+   "score": 0.62,
+   "reasonCode": "kb_match",
+   "reason": "based on common advice for this question"
+  },
+  "urgency": "today",
+  "whatsHappening": "Small holes in young maize leaves are often the first sign of fall armyworm feeding inside the funnel.",
+  "whyItMatters": "Maize this young can lose many leaves in a week.",
+  "steps": [
+   "Walk your field in a W and look closely at 20 plants.",
+   "Crush egg clusters and small caterpillars by hand.",
+   "If 4 or more of the 20 plants have fresh damage: If you must spray, use only a product on RAB’s approved list from a registered agro-dealer. Follow the label, wear gloves and a mask, and keep children away."
+  ],
+  "followUp": "Add a photo so Inama can be surer.",
+  "relatedConditionId": "maize_fall_armyworm",
+  "sources": [
+   "FAO guidance on fall armyworm management",
+   "Rwanda Agriculture Board (RAB) crop protection guidance"
+  ]
+ }
+}

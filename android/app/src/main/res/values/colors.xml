@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Only what the platform needs before Compose draws (window, launcher). App colours live in ui/theme/Theme.kt. -->
+<resources>
+    <color name="inama_ground">#FFF1F3EC</color>
+    <color name="inama_forest">#FF234726</color>
+    <color name="inama_forest_deep">#FF15301A</color>
+</resources>

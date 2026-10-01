@@ -1,0 +1,215 @@
+{
+ "schemaVersion": 1,
+ "language": "en",
+ "reviewStatus": "draft",
+ "lessons": [
+  {
+   "id": "armyworm_check",
+   "title": "Check maize for armyworm: the W walk",
+   "topic": "Pests",
+   "cropId": "maize",
+   "minutes": 4,
+   "summary": "A 10-minute field check that tells you whether to act.",
+   "steps": [
+    {
+     "icon": "route",
+     "text": "Walk your field in the shape of a W."
+    },
+    {
+     "icon": "target",
+     "text": "Stop at 5 spots along the W."
+    },
+    {
+     "icon": "eye",
+     "text": "At each spot, look closely at 4 plants — 20 plants in all."
+    },
+    {
+     "icon": "leaf",
+     "text": "Count plants with fresh holes or droppings in the funnel."
+    },
+    {
+     "icon": "check",
+     "text": "0–3 damaged plants: no spray, check again in 3 days. 4 or more: act today."
+    }
+   ]
+  },
+  {
+   "id": "compost",
+   "title": "Making compost",
+   "topic": "Soil & water",
+   "cropId": null,
+   "minutes": 5,
+   "summary": "Turn crop leftovers and manure into free fertilizer.",
+   "steps": [
+    {
+     "icon": "spade",
+     "text": "Dig a pit in the shade, about 1 metre wide and deep."
+    },
+    {
+     "icon": "leaf",
+     "text": "Layer dry material, then green leaves and weeds."
+    },
+    {
+     "icon": "cow",
+     "text": "Add manure and a little ash."
+    },
+    {
+     "icon": "drop",
+     "text": "Keep it damp, not wet."
+    },
+    {
+     "icon": "sync",
+     "text": "Turn it every 2 weeks. It’s ready in about 3 months — dark and crumbly."
+    }
+   ]
+  },
+  {
+   "id": "mulch_beans",
+   "title": "Mulching beans before a dry spell",
+   "topic": "Climate-smart",
+   "cropId": "beans",
+   "minutes": 3,
+   "summary": "Keep water in the soil when rain stops.",
+   "steps": [
+    {
+     "icon": "leaf",
+     "text": "Collect dry grass or crop leftovers."
+    },
+    {
+     "icon": "layers",
+     "text": "Spread a thin layer between the rows, not touching stems."
+    },
+    {
+     "icon": "drop",
+     "text": "Mulch after rain, while the soil is still moist."
+    }
+   ]
+  },
+  {
+   "id": "topdress_maize",
+   "title": "Top-dressing maize at knee height",
+   "topic": "Fertilizer",
+   "cropId": "maize",
+   "minutes": 3,
+   "summary": "The right time and way to add urea.",
+   "steps": [
+    {
+     "icon": "calendar",
+     "text": "Wait until maize is knee-high and the soil is moist."
+    },
+    {
+     "icon": "sack",
+     "text": "Put a small pinch of urea in a ring a hand-width from each plant."
+    },
+    {
+     "icon": "spade",
+     "text": "Cover it with soil — uncovered urea escapes into the air."
+    },
+    {
+     "icon": "rain",
+     "text": "Don’t apply just before heavy rain."
+    }
+   ]
+  },
+  {
+   "id": "store_maize",
+   "title": "Storing maize safely",
+   "topic": "After harvest",
+   "cropId": "maize",
+   "minutes": 4,
+   "summary": "Dry, clean and airtight storage keeps grain safe to eat.",
+   "steps": [
+    {
+     "icon": "sun",
+     "text": "Dry cobs on a tarpaulin, off the ground."
+    },
+    {
+     "icon": "check",
+     "text": "It’s dry when a grain cracks as you bite it."
+    },
+    {
+     "icon": "sack",
+     "text": "Store in airtight (hermetic) bags."
+    },
+    {
+     "icon": "home",
+     "text": "Keep bags on pallets, off the floor and walls."
+    }
+   ]
+  },
+  {
+   "id": "clean_cuttings",
+   "title": "Choosing clean cassava cuttings",
+   "topic": "Planting",
+   "cropId": "cassava",
+   "minutes": 3,
+   "summary": "Stop disease before it starts.",
+   "steps": [
+    {
+     "icon": "eye",
+     "text": "Mark healthy plants before harvest."
+    },
+    {
+     "icon": "x",
+     "text": "Skip any plant with mosaic, brown spots or dry shoots."
+    },
+    {
+     "icon": "hoe",
+     "text": "Cut pieces about 25 cm long with 5–7 buds."
+    }
+   ]
+  },
+  {
+   "id": "safe_spraying",
+   "title": "Spraying safely",
+   "topic": "Safety",
+   "cropId": null,
+   "minutes": 4,
+   "summary": "Protect yourself, your family and your water.",
+   "steps": [
+    {
+     "icon": "shield",
+     "text": "Use only products on RAB’s approved list, from a registered agro-dealer."
+    },
+    {
+     "icon": "user",
+     "text": "Wear gloves, a mask and long sleeves."
+    },
+    {
+     "icon": "wind",
+     "text": "Spray in the calm early morning, never before rain."
+    },
+    {
+     "icon": "drop",
+     "text": "Wash hands and clothes after spraying; keep children away."
+    },
+    {
+     "icon": "trash",
+     "text": "Never reuse empty containers for water or food."
+    }
+   ]
+  },
+  {
+   "id": "rainwater",
+   "title": "Catching rainwater",
+   "topic": "Soil & water",
+   "cropId": null,
+   "minutes": 3,
+   "summary": "Save rain for dry spells.",
+   "steps": [
+    {
+     "icon": "home",
+     "text": "Guide roof water into a tank or drum with a gutter."
+    },
+    {
+     "icon": "spade",
+     "text": "Dig a lined pit at the bottom of the field."
+    },
+    {
+     "icon": "drop",
+     "text": "Use stored water for seedlings during dry spells."
+    }
+   ]
+  }
+ ]
+}

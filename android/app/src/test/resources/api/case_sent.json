@@ -1,0 +1,16 @@
+{
+ "success": true,
+ "data": {
+  "id": "case_1ed433df8aa1517c",
+  "diagnosisId": "dg_acd25a3085906ae9",
+  "note": "Please check",
+  "status": "sent",
+  "expert": {
+   "name": "Your farmer promoter",
+   "role": "farmer_promoter"
+  },
+  "expectedReplyHours": 3,
+  "createdAt": "2026-09-30T11:11:06.286Z",
+  "reply": null
+ }
+}
